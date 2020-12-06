@@ -1,0 +1,262 @@
+-- Decompiled with CoDLUIDecompiler by JariK
+
+require("ui.uieditor.widgets.BorderBakedMask")
+require("ui.uieditor.widgets.Craft.Paintshop.PaintshopButtonPrompt")
+require("ui.uieditor.widgets.Craft.Paintshop.PaintshopLine")
+require("ui.uieditor.widgets.Craft.EmblemEditor.EmblemEditorFrame")
+local registerVal1 = InheritFrom(LUI.UIElement)
+CoD.EmblemIconClipboard = registerVal1
+function CoD.EmblemIconClipboard.new(arg0, arg1)
+	local registerVal2 = LUI.UIElement.new()
+	if PreLoadFunc then
+		PreLoadFunc(registerVal2, arg1)
+	end
+	registerVal2:setUseStencil(false)
+	registerVal2:setClass(CoD.EmblemIconClipboard)
+	registerVal2.id = "EmblemIconClipboard"
+	registerVal2.soundSet = "CustomizationEditor"
+	registerVal2:setLeftRight(true, false, 0.000000, 168.000000)
+	registerVal2:setTopBottom(true, false, 0.000000, 160.000000)
+	registerVal2.anyChildUsesUpdateState = true
+	local registerVal3 = CoD.BorderBakedMask.new(arg0, arg1)
+	registerVal3:setLeftRight(true, true, 0.000000, 0.000000)
+	registerVal3:setTopBottom(true, true, 0.000000, 0.000000)
+	registerVal3:setRGB(0.030000, 0.030000, 0.040000)
+	registerVal3:setAlpha(0.750000)
+	registerVal2:addElement(registerVal3)
+	registerVal2.BorderBakedMask0 = registerVal3
+	local registerVal4 = CoD.PaintshopButtonPrompt.new(arg0, arg1)
+	registerVal4:setLeftRight(true, true, 10.000000, -18.000000)
+	registerVal4:setTopBottom(true, true, 131.000000, -4.000000)
+	registerVal4.label:setText(Engine.Localize("MENU_EMBLEM_LAYER_PASTE"))
+	local function __FUNC_1145_(arg0)
+		local registerVal1 = Engine.GetModelValue(arg0)
+		if registerVal1 then
+			registerVal4.buttonPromptImage:setImage(RegisterImage(registerVal1))
+		end
+	end
+
+	registerVal4:subscribeToGlobalModel(arg1, "Controller", "start_button_image", __FUNC_1145_)
+	registerVal2:addElement(registerVal4)
+	registerVal2.Paste = registerVal4
+	local registerVal5 = LUI.UIText.new()
+	registerVal5:setLeftRight(true, false, 10.000000, 160.000000)
+	registerVal5:setTopBottom(true, false, 11.000000, 27.000000)
+	registerVal5:setRGB(0.510000, 0.500000, 0.590000)
+	registerVal5:setText(Engine.Localize("MENU_EMBLEM_LAYER_CLIPBOARD"))
+	registerVal5:setTTF("fonts/UnitedSansSmCdMd.ttf")
+	registerVal5:setAlignment(Enum.LUIAlignment.LUI_ALIGNMENT_LEFT)
+	registerVal5:setAlignment(Enum.LUIAlignment.LUI_ALIGNMENT_TOP)
+	registerVal2:addElement(registerVal5)
+	registerVal2.clipboardTitle = registerVal5
+	local registerVal6 = LUI.UIImage.new()
+	registerVal6:setLeftRight(true, true, 28.000000, -28.000000)
+	registerVal6:setTopBottom(true, true, 27.000000, -29.000000)
+	registerVal6:setAlpha(0.000000)
+	registerVal2:addElement(registerVal6)
+	registerVal2.bgBorder = registerVal6
+	local registerVal7 = LUI.UIImage.new()
+	registerVal7:setLeftRight(true, true, 30.000000, -30.000000)
+	registerVal7:setTopBottom(true, true, 29.000000, -31.000000)
+	registerVal7:setRGB(0.000000, 0.000000, 0.000000)
+	registerVal7:setAlpha(0.000000)
+	registerVal2:addElement(registerVal7)
+	registerVal2.bgMask = registerVal7
+	local registerVal8 = LUI.UIImage.new()
+	registerVal8:setLeftRight(true, true, 30.000000, -30.000000)
+	registerVal8:setTopBottom(true, true, 29.000000, -31.000000)
+	registerVal8:setRGB(0.740000, 0.750000, 0.830000)
+	registerVal8:setAlpha(0.000000)
+	registerVal8:setZRot(180.000000)
+	registerVal8:setImage(RegisterImage("uie_img_t7_menu_customclass_gradient01"))
+	registerVal2:addElement(registerVal8)
+	registerVal2.BackingGradient = registerVal8
+	local registerVal9 = LUI.UIElement.new()
+	registerVal9:setLeftRight(true, true, 5.000000, -5.000000)
+	registerVal9:setTopBottom(true, true, 27.000000, -33.000000)
+	registerVal9:setupEmblemCopyWidget()
+	registerVal2:addElement(registerVal9)
+	registerVal2.copyIcon = registerVal9
+	local registerVal10 = CoD.PaintshopLine.new(arg0, arg1)
+	registerVal10:setLeftRight(true, false, 157.000000, 10.000000)
+	registerVal10:setTopBottom(true, false, -1.000000, 4.000000)
+	registerVal2:addElement(registerVal10)
+	registerVal2.PaintshopLine10 = registerVal10
+	local registerVal11 = CoD.EmblemEditorFrame.new(arg0, arg1)
+	registerVal11:setLeftRight(true, false, 0.000000, 168.000000)
+	registerVal11:setTopBottom(true, false, -1.000000, 160.000000)
+	registerVal11:setAlpha(0.000000)
+	registerVal2:addElement(registerVal11)
+	registerVal2.EmblemEditorFrame0 = registerVal11
+	local registerVal12 = LUI.UIText.new()
+	registerVal12:setLeftRight(true, false, 5.000000, 163.000000)
+	registerVal12:setTopBottom(true, false, 129.000000, 151.000000)
+	registerVal12:setRGB(1.000000, 0.000000, 0.000000)
+	registerVal12:setAlpha(0.000000)
+	registerVal12:setText(Engine.Localize("MENU_EMBLEM_MAX_GROUPS_USED"))
+	registerVal12:setTTF("fonts/default.ttf")
+	registerVal12:setAlignment(Enum.LUIAlignment.LUI_ALIGNMENT_LEFT)
+	registerVal12:setAlignment(Enum.LUIAlignment.LUI_ALIGNMENT_TOP)
+	registerVal2:addElement(registerVal12)
+	registerVal2.allGroupsUsedText = registerVal12
+	local registerVal13 = {}
+	local registerVal14 = {}
+	local function __FUNC_121F_()
+		registerVal2:setupElementClipCounter(9.000000)
+		registerVal3:completeAnimation()
+		registerVal2.BorderBakedMask0:setAlpha(0.000000)
+		registerVal2.clipFinished(registerVal3, {})
+		registerVal4:completeAnimation()
+		registerVal2.Paste:setAlpha(0.000000)
+		registerVal2.clipFinished(registerVal4, {})
+		registerVal5:completeAnimation()
+		registerVal2.clipboardTitle:setAlpha(0.000000)
+		registerVal2.clipFinished(registerVal5, {})
+		registerVal6:completeAnimation()
+		registerVal2.bgBorder:setAlpha(0.000000)
+		registerVal2.clipFinished(registerVal6, {})
+		registerVal7:completeAnimation()
+		registerVal2.bgMask:setAlpha(0.000000)
+		registerVal2.clipFinished(registerVal7, {})
+		registerVal8:completeAnimation()
+		registerVal2.BackingGradient:setAlpha(0.000000)
+		registerVal2.clipFinished(registerVal8, {})
+		registerVal9:completeAnimation()
+		registerVal2.copyIcon:setAlpha(0.000000)
+		registerVal2.clipFinished(registerVal9, {})
+		registerVal10:completeAnimation()
+		registerVal2.PaintshopLine10:setRGB(1.000000, 1.000000, 1.000000)
+		registerVal2.PaintshopLine10:setAlpha(0.000000)
+		registerVal2.clipFinished(registerVal10, {})
+		registerVal12:completeAnimation()
+		registerVal2.allGroupsUsedText:setAlpha(0.000000)
+		registerVal2.clipFinished(registerVal12, {})
+	end
+
+	registerVal14.DefaultClip = __FUNC_121F_
+	registerVal13.DefaultState = registerVal14
+	registerVal14 = {}
+	local function __FUNC_1625_()
+		registerVal2:setupElementClipCounter(9.000000)
+		registerVal3:completeAnimation()
+		registerVal2.BorderBakedMask0:setAlpha(0.000000)
+		registerVal2.clipFinished(registerVal3, {})
+		registerVal4:completeAnimation()
+		registerVal2.Paste:setAlpha(0.000000)
+		registerVal2.clipFinished(registerVal4, {})
+		registerVal5:completeAnimation()
+		registerVal2.clipboardTitle:setAlpha(0.000000)
+		registerVal2.clipFinished(registerVal5, {})
+		registerVal6:completeAnimation()
+		registerVal2.bgBorder:setAlpha(0.000000)
+		registerVal2.clipFinished(registerVal6, {})
+		registerVal7:completeAnimation()
+		registerVal2.bgMask:setAlpha(0.000000)
+		registerVal2.clipFinished(registerVal7, {})
+		registerVal8:completeAnimation()
+		registerVal2.BackingGradient:setAlpha(0.000000)
+		registerVal2.clipFinished(registerVal8, {})
+		registerVal9:completeAnimation()
+		registerVal2.copyIcon:setAlpha(0.000000)
+		registerVal2.clipFinished(registerVal9, {})
+		registerVal10:completeAnimation()
+		registerVal2.PaintshopLine10:setAlpha(0.000000)
+		registerVal2.clipFinished(registerVal10, {})
+		registerVal12:completeAnimation()
+		registerVal2.allGroupsUsedText:setAlpha(0.000000)
+		registerVal2.clipFinished(registerVal12, {})
+	end
+
+	registerVal14.DefaultClip = __FUNC_1625_
+	registerVal13.Invisible = registerVal14
+	registerVal14 = {}
+	local function __FUNC_19F4_()
+		registerVal2:setupElementClipCounter(9.000000)
+		registerVal3:completeAnimation()
+		registerVal2.BorderBakedMask0:setAlpha(0.750000)
+		registerVal2.clipFinished(registerVal3, {})
+		registerVal4:completeAnimation()
+		registerVal2.Paste:setAlpha(1.000000)
+		registerVal2.clipFinished(registerVal4, {})
+		registerVal5:completeAnimation()
+		registerVal2.clipboardTitle:setLeftRight(true, false, 10.000000, 160.000000)
+		registerVal2.clipboardTitle:setTopBottom(true, false, 11.000000, 27.000000)
+		registerVal2.clipboardTitle:setAlpha(1.000000)
+		registerVal2.clipFinished(registerVal5, {})
+		registerVal6:completeAnimation()
+		registerVal2.bgBorder:setAlpha(0.000000)
+		registerVal2.clipFinished(registerVal6, {})
+		registerVal7:completeAnimation()
+		registerVal2.bgMask:setAlpha(0.000000)
+		registerVal2.clipFinished(registerVal7, {})
+		registerVal8:completeAnimation()
+		registerVal2.BackingGradient:setLeftRight(true, true, 30.000000, -30.000000)
+		registerVal2.BackingGradient:setTopBottom(true, true, 29.000000, -31.000000)
+		registerVal2.BackingGradient:setAlpha(0.000000)
+		registerVal2.clipFinished(registerVal8, {})
+		registerVal9:completeAnimation()
+		registerVal2.copyIcon:setAlpha(1.000000)
+		registerVal2.clipFinished(registerVal9, {})
+		registerVal10:completeAnimation()
+		registerVal2.PaintshopLine10:setAlpha(1.000000)
+		registerVal2.clipFinished(registerVal10, {})
+		registerVal12:completeAnimation()
+		registerVal2.allGroupsUsedText:setAlpha(0.000000)
+		registerVal2.clipFinished(registerVal12, {})
+	end
+
+	registerVal14.DefaultClip = __FUNC_19F4_
+	registerVal13.PasteState = registerVal14
+	registerVal14 = {}
+	local function __FUNC_1EC2_()
+		registerVal2:setupElementClipCounter(9.000000)
+		registerVal3:completeAnimation()
+		registerVal2.BorderBakedMask0:setAlpha(0.750000)
+		registerVal2.clipFinished(registerVal3, {})
+		registerVal4:completeAnimation()
+		registerVal2.Paste:setAlpha(0.000000)
+		registerVal2.clipFinished(registerVal4, {})
+		registerVal5:completeAnimation()
+		registerVal2.clipboardTitle:setLeftRight(true, false, 10.000000, 160.000000)
+		registerVal2.clipboardTitle:setTopBottom(true, false, 11.000000, 27.000000)
+		registerVal2.clipboardTitle:setAlpha(1.000000)
+		registerVal2.clipFinished(registerVal5, {})
+		registerVal6:completeAnimation()
+		registerVal2.bgBorder:setAlpha(0.000000)
+		registerVal2.clipFinished(registerVal6, {})
+		registerVal7:completeAnimation()
+		registerVal2.bgMask:setAlpha(0.000000)
+		registerVal2.clipFinished(registerVal7, {})
+		registerVal8:completeAnimation()
+		registerVal2.BackingGradient:setLeftRight(true, true, 30.000000, -30.000000)
+		registerVal2.BackingGradient:setTopBottom(true, true, 29.000000, -31.000000)
+		registerVal2.BackingGradient:setAlpha(0.000000)
+		registerVal2.clipFinished(registerVal8, {})
+		registerVal9:completeAnimation()
+		registerVal2.copyIcon:setAlpha(1.000000)
+		registerVal2.clipFinished(registerVal9, {})
+		registerVal10:completeAnimation()
+		registerVal2.PaintshopLine10:setAlpha(1.000000)
+		registerVal2.clipFinished(registerVal10, {})
+		registerVal12:completeAnimation()
+		registerVal2.allGroupsUsedText:setAlpha(1.000000)
+		registerVal2.clipFinished(registerVal12, {})
+	end
+
+	registerVal14.DefaultClip = __FUNC_1EC2_
+	registerVal13.AllGroupsUsed = registerVal14
+	registerVal2.clipsPerState = registerVal13
+	local function __FUNC_238E_(arg0)
+		arg0.BorderBakedMask0:close()
+		arg0.Paste:close()
+		arg0.PaintshopLine10:close()
+		arg0.EmblemEditorFrame0:close()
+	end
+
+	LUI.OverrideFunction_CallOriginalSecond(registerVal2, "close", __FUNC_238E_)
+	if PostLoadFunc then
+		PostLoadFunc(registerVal2, arg1, arg0)
+	end
+	return registerVal2
+end
+
