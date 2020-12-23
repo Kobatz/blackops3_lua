@@ -8,7 +8,7 @@ require("ui.uieditor.widgets.EndGameFlow.KillcamWidgetFctnPnl")
 require("ui.uieditor.widgets.HUD.Outcome.WinnerFactionInfo")
 require("ui.uieditor.widgets.CharacterCustomization.tauntWidget")
 local function __FUNC_3FA_(arg0, arg1, arg2)
-	local function __FUNC_54F_(arg1)
+	arg0:subscribeToGlobalModel(arg1, "PerController", "scriptNotify", __FUNC_54F_(arg1)
 		local registerVal1 = IsParamModelEqualToString(arg1, "show_outcome")
 		if registerVal1 then
 			registerVal1 = CoD.GetScriptNotifyData(arg1)
@@ -17,9 +17,8 @@ local function __FUNC_3FA_(arg0, arg1, arg2)
 				arg0.WinnerFactionInfo:close()
 			end
 		end
-	end
+	end)
 
-	arg0:subscribeToGlobalModel(arg1, "PerController", "scriptNotify", __FUNC_54F_)
 	local registerVal4 = Engine.GetModelForController(arg1)
 	local registerVal3 = Engine.CreateModel(registerVal4, "displayTop3Players")
 	local function __FUNC_6D5_(arg2)

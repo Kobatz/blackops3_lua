@@ -4720,12 +4720,12 @@ end
 
 local function CoD.GetScriptNotifyData(data)
 
-	local model = Engine.GetModel(data, "numArgs")
-	local value = Engine.GetModelValue(model)
+	local GetNumArgs = Engine.GetModel(data, "numArgs")
+	local Args = Engine.GetModelValue(GetNumArgs)
 
-	if value ~= nil and 0 < value then end
+	if Args ~= nil and 0 < Args then end
 
-	for i=1, value, 1 do
+	for i=1, Args, 1 do
 		table.insert({}, CoD.SafeGetModelValue(data, ("arg" .. i)))
 	end
 
