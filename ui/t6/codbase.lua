@@ -18,48 +18,48 @@ if Engine ~= nil then
 end
 require("ui.T7.Utility.OverlayUtility")
 require("lua.Shared.CoDShared")
-CoD.LANGUAGE_ENGLISH = 0.000000
-CoD.LANGUAGE_FRENCH = 1.000000
-CoD.LANGUAGE_FRENCHCANADIAN = 2.000000
-CoD.LANGUAGE_GERMAN = 3.000000
-CoD.LANGUAGE_AUSTRIAN = 4.000000
-CoD.LANGUAGE_ITALIAN = 5.000000
-CoD.LANGUAGE_SPANISH = 6.000000
-CoD.LANGUAGE_BRITISH = 7.000000
-CoD.LANGUAGE_RUSSIAN = 8.000000
-CoD.LANGUAGE_POLISH = 9.000000
-CoD.LANGUAGE_KOREAN = 10.000000
-CoD.LANGUAGE_JAPANESE = 11.000000
-CoD.LANGUAGE_CZECH = 12.000000
-CoD.LANGUAGE_FULLJAPANESE = 13.000000
-CoD.LANGUAGE_PORTUGUESE = 14.000000
-CoD.LANGUAGE_MEXICANSPANISH = 15.000000
-CoD.LANGUAGE_ARABIC = 16.000000
-CoD.LANGUAGE_TRADITIONALCHINESE = 17.000000
-CoD.LANGUAGE_SIMPLIFIEDCHINESE = 18.000000
-CoD.LANGUAGE_ENGLISHGERMAN = 19.000000
-CoD.LANGUAGE_ENGLISHJAPANESE = 20.000000
-CoD.LANGUAGE_HEBREW = 21.000000
-CoD.LANGUAGE_ENGLISHARABIC = 22.000000
-CoD.XC_LOCALE_UNITED_STATES = 36.000000
-CoD.UIMENU_NONE = 0.000000
-CoD.UIMENU_MAIN = 1.000000
-CoD.UIMENU_MAINLOBBY = 2.000000
-CoD.UIMENU_INGAME = 3.000000
-CoD.UIMENU_PREGAME = 4.000000
-CoD.UIMENU_POSTGAME = 5.000000
-CoD.UIMENU_WM_QUICKMESSAGE = 6.000000
-CoD.UIMENU_SCRIPT_POPUP = 7.000000
-CoD.UIMENU_SCOREBOARD = 8.000000
-CoD.UIMENU_GAMERCARD = 9.000000
-CoD.UIMENU_MUTEERROR = 10.000000
-CoD.UIMENU_SPLITSCREENGAMESETUP = 11.000000
-CoD.UIMENU_SYSTEMLINKJOINGAME = 12.000000
-CoD.UIMENU_PARTY = 13.000000
-CoD.UIMENU_LEAGUE_PARTY = 15.000000
-CoD.UIMENU_GAMELOBBY = 16.000000
-CoD.UIMENU_PRIVATELOBBY = 18.000000
-CoD.UIMENU_LEAGUELOBBY = 19.000000
+CoD.LANGUAGE_ENGLISH = 0
+CoD.LANGUAGE_FRENCH = 1
+CoD.LANGUAGE_FRENCHCANADIAN = 2
+CoD.LANGUAGE_GERMAN = 3
+CoD.LANGUAGE_AUSTRIAN = 4
+CoD.LANGUAGE_ITALIAN = 5
+CoD.LANGUAGE_SPANISH = 6
+CoD.LANGUAGE_BRITISH = 7
+CoD.LANGUAGE_RUSSIAN = 8
+CoD.LANGUAGE_POLISH = 9
+CoD.LANGUAGE_KOREAN = 10
+CoD.LANGUAGE_JAPANESE = 11
+CoD.LANGUAGE_CZECH = 12
+CoD.LANGUAGE_FULLJAPANESE = 13
+CoD.LANGUAGE_PORTUGUESE = 14
+CoD.LANGUAGE_MEXICANSPANISH = 15
+CoD.LANGUAGE_ARABIC = 16
+CoD.LANGUAGE_TRADITIONALCHINESE = 17
+CoD.LANGUAGE_SIMPLIFIEDCHINESE = 18
+CoD.LANGUAGE_ENGLISHGERMAN = 19
+CoD.LANGUAGE_ENGLISHJAPANESE = 20
+CoD.LANGUAGE_HEBREW = 21
+CoD.LANGUAGE_ENGLISHARABIC = 22
+CoD.XC_LOCALE_UNITED_STATES = 36
+CoD.UIMENU_NONE = 0
+CoD.UIMENU_MAIN = 1
+CoD.UIMENU_MAINLOBBY = 2
+CoD.UIMENU_INGAME = 3
+CoD.UIMENU_PREGAME = 4
+CoD.UIMENU_POSTGAME = 5
+CoD.UIMENU_WM_QUICKMESSAGE = 6
+CoD.UIMENU_SCRIPT_POPUP = 7
+CoD.UIMENU_SCOREBOARD = 8
+CoD.UIMENU_GAMERCARD = 9
+CoD.UIMENU_MUTEERROR = 10
+CoD.UIMENU_SPLITSCREENGAMESETUP = 11
+CoD.UIMENU_SYSTEMLINKJOINGAME = 12
+CoD.UIMENU_PARTY = 13
+CoD.UIMENU_LEAGUE_PARTY = 15
+CoD.UIMENU_GAMELOBBY = 16
+CoD.UIMENU_PRIVATELOBBY = 18
+CoD.UIMENU_LEAGUELOBBY = 19
 local registerVal1 = Engine.GetCurrentPlatform()
 if registerVal1 ~= "durango" then
 end
@@ -78,14 +78,14 @@ CoD.codcasterTeamIdentityLogoTable = "mp_codcaster_logo_list"
 CoD.completeCollectiblesAssetName = "completecollectibleslist"
 CoD.NotEnoughLD = false
 registerVal3 = {}
-registerVal3.PSNZMDLC1 = 100020.000000
-registerVal3.PSNZMDLC2 = 100021.000000
-registerVal3.PSNZMDLC3 = 100022.000000
-registerVal3.PSNZMDLC4 = 100023.000000
-registerVal3.XB1ZMDLC1 = 110020.000000
-registerVal3.XB1ZMDLC2 = 110021.000000
-registerVal3.XB1ZMDLC3 = 110022.000000
-registerVal3.XB1ZMDLC4 = 110023.000000
+registerVal3.PSNZMDLC1 = 100020
+registerVal3.PSNZMDLC2 = 100021
+registerVal3.PSNZMDLC3 = 100022
+registerVal3.PSNZMDLC4 = 100023
+registerVal3.XB1ZMDLC1 = 110020
+registerVal3.XB1ZMDLC2 = 110021
+registerVal3.XB1ZMDLC3 = 110022
+registerVal3.XB1ZMDLC4 = 110023
 CoD.ZMDLCProductIDs = registerVal3
 registerVal3 = {}
 registerVal3.CONTENT_UNKNOWN = Enum.ContentFlagBits.CONTENT_UNKNOWN
@@ -103,7 +103,7 @@ registerVal3.CONTENT_DLC3ZM = Enum.ContentFlagBits.CONTENT_DLC3ZM
 registerVal3.CONTENT_DLC4ZM = Enum.ContentFlagBits.CONTENT_DLC4ZM
 registerVal3.CONTENT_DLC6 = Enum.ContentFlagBits.CONTENT_DLC6
 CoD.DLCBits = registerVal3
-CoD.DLCFocus = 0.000000
+CoD.DLCFocus = 0
 registerVal3 = {}
 registerVal3[CoD.DLCBits.CONTENT_DLC0MP] = "MPUI_NUKETOWN_X"
 registerVal3[CoD.DLCBits.CONTENT_DLC0ZM] = "ZMUI_FACTORY"
@@ -167,7 +167,7 @@ registerVal6[CoD.DLCBits.CONTENT_DLC3] = "dlc3"
 registerVal6[CoD.DLCBits.CONTENT_DLC4] = "dlc4"
 registerVal6[CoD.DLCBits.CONTENT_DLC6] = "dlc6"
 registerVal5.products = registerVal6
-registerVal5.known = 0.000000
+registerVal5.known = 0
 registerVal3[Enum.eModes.MODE_MULTIPLAYER] = registerVal5
 registerVal5 = {}
 registerVal6 = {}
@@ -182,15 +182,15 @@ registerVal6[CoD.DLCBits.CONTENT_DLC2ZM] = "dlc2zm"
 registerVal6[CoD.DLCBits.CONTENT_DLC3ZM] = "dlc3zm"
 registerVal6[CoD.DLCBits.CONTENT_DLC4ZM] = "dlc4zm"
 registerVal5.products = registerVal6
-registerVal5.known = 0.000000
+registerVal5.known = 0
 registerVal3[Enum.eModes.MODE_ZOMBIES] = registerVal5
 registerVal5 = {}
 registerVal5.products = {}
-registerVal5.known = 0.000000
+registerVal5.known = 0
 registerVal3[Enum.eModes.MODE_CAMPAIGN] = registerVal5
 registerVal5 = {}
 registerVal5.products = {}
-registerVal5.known = 0.000000
+registerVal5.known = 0
 registerVal3[Enum.eModes.MODE_INVALID] = registerVal5
 CoD.ProductFromBit = registerVal3
 CoD.ContractWeaponTiers = {}
@@ -204,57 +204,57 @@ CoD.LoginRewardOverlayImage = "t7_crm_motd_watermelon_camo"
 CoD.LoginRewardEntitlementString = "watermelon_camo"
 CoD.LoginRewardItemReference = "mtl_t7_camo_summertime_wpn"
 CoD.LoginRewardToastImage = "t7_callingcard_soldier_raft"
-CoD.LoginRewardItemID = 2119988000.000000
-CoD.LoginRewardSKU = 90136.000000
+CoD.LoginRewardItemID = 2119988000
+CoD.LoginRewardSKU = 90136
 CoD.RewardRedeemBtnInfoList = {}
 registerVal3 = {}
-registerVal3.DOUBLEXP_EVERYONE = 0.000000
-registerVal3.DOUBLEXP_PREORDER = 1.000000
-registerVal3.DOUBLEXP_GROUP_PARTY2 = 2.000000
-registerVal3.DOUBLEXP_GROUP_PARTY3 = 3.000000
-registerVal3.DOUBLEXP_GROUP_PARTY4 = 4.000000
-registerVal3.DOUBLEXP_GROUP_PARTY5 = 5.000000
-registerVal3.DOUBLEXP_GROUP_PARTY6 = 6.000000
-registerVal3.DOUBLEXP_GROUP_DLCALL = 7.000000
-registerVal3.DOUBLEXP_GROUP_DLCANY = 8.000000
-registerVal3.DOUBLEXP_GROUP_DLC0 = 9.000000
-registerVal3.DOUBLEXP_GROUP_DLC_FIRST = 9.000000
-registerVal3.DOUBLEXP_GROUP_DLCZM0 = 10.000000
-registerVal3.DOUBLEXP_GROUP_DLC1 = 11.000000
-registerVal3.DOUBLEXP_GROUP_DLC2 = 12.000000
-registerVal3.DOUBLEXP_GROUP_DLC3 = 13.000000
-registerVal3.DOUBLEXP_GROUP_DLC4 = 14.000000
-registerVal3.DOUBLEXP_GROUP_DLC5 = 15.000000
-registerVal3.DOUBLEXP_GROUP_DLCSEASONPASS = 16.000000
-registerVal3.DOUBLEXP_GROUP_DLC_LAST = 16.000000
-registerVal3.DOUBLEXP_GROUP_OWN_DLCALL = 17.000000
-registerVal3.DOUBLEXP_GROUP_OWN_DLCANY = 18.000000
-registerVal3.DOUBLEXP_GROUP_OWN_DLC0 = 19.000000
-registerVal3.DOUBLEXP_GROUP_OWN_DLC_FIRST = 19.000000
-registerVal3.DOUBLEXP_GROUP_OWN_DLCZM0 = 20.000000
-registerVal3.DOUBLEXP_GROUP_OWN_DLC1 = 21.000000
-registerVal3.DOUBLEXP_GROUP_OWN_DLC2 = 22.000000
-registerVal3.DOUBLEXP_GROUP_OWN_DLC3 = 23.000000
-registerVal3.DOUBLEXP_GROUP_OWN_DLC4 = 24.000000
-registerVal3.DOUBLEXP_GROUP_OWN_DLC5 = 25.000000
-registerVal3.DOUBLEXP_GROUP_OWN_DLCSEASONPASS = 26.000000
-registerVal3["DOUBLEXP_GROUP_OWN_DLC_LAST"] = 26.000000
-registerVal3["DOUBLEXP_GROUP_CE_NUKETOWN_2025"] = 27.000000
-registerVal3["DOUBLEXP_GROUP_CE_NUKETOWN_Z"] = 28.000000
-registerVal3["DOUBLEXP_GROUP_CE_CAMO"] = 29.000000
-registerVal3["DOUBLEXP_GROUP_PHANTOM"] = 30.000000
-registerVal3["DOUBLEXP_GROUP_ZM_DORITOS_PROMO"] = 31.000000
-registerVal3["DOUBLEXP_GROUP_COUNT"] = 32.000000
+registerVal3.DOUBLEXP_EVERYONE = 0
+registerVal3.DOUBLEXP_PREORDER = 1
+registerVal3.DOUBLEXP_GROUP_PARTY2 = 2
+registerVal3.DOUBLEXP_GROUP_PARTY3 = 3
+registerVal3.DOUBLEXP_GROUP_PARTY4 = 4
+registerVal3.DOUBLEXP_GROUP_PARTY5 = 5
+registerVal3.DOUBLEXP_GROUP_PARTY6 = 6
+registerVal3.DOUBLEXP_GROUP_DLCALL = 7
+registerVal3.DOUBLEXP_GROUP_DLCANY = 8
+registerVal3.DOUBLEXP_GROUP_DLC0 = 9
+registerVal3.DOUBLEXP_GROUP_DLC_FIRST = 9
+registerVal3.DOUBLEXP_GROUP_DLCZM0 = 10
+registerVal3.DOUBLEXP_GROUP_DLC1 = 11
+registerVal3.DOUBLEXP_GROUP_DLC2 = 12
+registerVal3.DOUBLEXP_GROUP_DLC3 = 13
+registerVal3.DOUBLEXP_GROUP_DLC4 = 14
+registerVal3.DOUBLEXP_GROUP_DLC5 = 15
+registerVal3.DOUBLEXP_GROUP_DLCSEASONPASS = 16
+registerVal3.DOUBLEXP_GROUP_DLC_LAST = 16
+registerVal3.DOUBLEXP_GROUP_OWN_DLCALL = 17
+registerVal3.DOUBLEXP_GROUP_OWN_DLCANY = 18
+registerVal3.DOUBLEXP_GROUP_OWN_DLC0 = 19
+registerVal3.DOUBLEXP_GROUP_OWN_DLC_FIRST = 19
+registerVal3.DOUBLEXP_GROUP_OWN_DLCZM0 = 20
+registerVal3.DOUBLEXP_GROUP_OWN_DLC1 = 21
+registerVal3.DOUBLEXP_GROUP_OWN_DLC2 = 22
+registerVal3.DOUBLEXP_GROUP_OWN_DLC3 = 23
+registerVal3.DOUBLEXP_GROUP_OWN_DLC4 = 24
+registerVal3.DOUBLEXP_GROUP_OWN_DLC5 = 25
+registerVal3.DOUBLEXP_GROUP_OWN_DLCSEASONPASS = 26
+registerVal3["DOUBLEXP_GROUP_OWN_DLC_LAST"] = 26
+registerVal3["DOUBLEXP_GROUP_CE_NUKETOWN_2025"] = 27
+registerVal3["DOUBLEXP_GROUP_CE_NUKETOWN_Z"] = 28
+registerVal3["DOUBLEXP_GROUP_CE_CAMO"] = 29
+registerVal3["DOUBLEXP_GROUP_PHANTOM"] = 30
+registerVal3["DOUBLEXP_GROUP_ZM_DORITOS_PROMO"] = 31
+registerVal3["DOUBLEXP_GROUP_COUNT"] = 32
 CoD.XPGROUPS = registerVal3
 local registerVal4 = {}
 registerVal5 = {}
-registerVal5["itemId"] = 90041.000000
+registerVal5["itemId"] = 90041
 registerVal5["backgroundDescription"] = "EM_BACK_MP_bo4_preview"
 registerVal6 = {}
-registerVal6["itemId"] = 90043.000000
+registerVal6["itemId"] = 90043
 registerVal6["backgroundDescription"] = "EM_BACK_flying_bee"
 local registerVal7 = {}
-registerVal7["itemId"] = 90045.000000
+registerVal7["itemId"] = 90045
 registerVal7["backgroundDescription"] = "EM_BACK_soldier_raft"
 registerVal4 = {registerVal5, registerVal6, registerVal7}
 CoD["SpecialCallingCards"] = registerVal4
@@ -305,7 +305,7 @@ end
 
 CoD["IsHiddenDLC"] = __FUNC_F41C_
 local function __FUNC_F4D5_()
-	local registerVal1 = CoD.OrbisDurangoPCValue(2.000000, 3.000000, 4.000000)
+	local registerVal1 = CoD.OrbisDurangoPCValue(2, 3, 4)
 	CoD.ProductIsKnown = {}
 	CoD.ProductBitFromId = {}
 	local function __FUNC_F7F1_(arg0)
@@ -323,7 +323,7 @@ local function __FUNC_F4D5_()
 			if CoD.ProductIsKnown[index13] then
 				value9.known = (value9.known | index13)
 			else
-				local registerVal15 = __FUNC_F7F1_(Engine.TableLookup(nil, "gamedata/store/common/fpentitlement.csv", 5.000000, value14, registerVal1))
+				local registerVal15 = __FUNC_F7F1_(Engine.TableLookup(nil, "gamedata/store/common/fpentitlement.csv", 5, value14, registerVal1))
 				if registerVal1 or value14 == "dlc6" then
 					if CoD.DLCIndexFromBit[index13] and CoD.DLCIndexFromBit[index13] <= registerVal4 then
 						CoD.ProductIsKnown[index13] = true
@@ -357,7 +357,7 @@ local function __FUNC_F9DC_(arg0, arg1)
 		local registerVal3 = LuaUtils.UpdateZMDLCBits(arg0)
 		registerVal3 = LuaUtils.UpdateZMDLCBits(arg1)
 	end
-	if (registerVal3 & 16769540.000000) == ((registerVal3 & 16769540.000000) & (registerVal3 & 16769540.000000)) then
+	if (registerVal3 & 16769540) == ((registerVal3 & 16769540) & (registerVal3 & 16769540)) then
 	end
 	return true
 end
@@ -416,7 +416,7 @@ local function __FUNC_FF38_(arg0)
 			registerVal1 = Dvar.fracture_enabled:get()
 			registerVal1 = Dvar.fracture_enabled:get()
 			registerVal1 = Dvar.fracture_enabled:get()
-			if registerVal1 ~= 1.000000 and registerVal1 ~= "1" and registerVal1 ~= true then
+			if registerVal1 ~= 1 and registerVal1 ~= "1" and registerVal1 ~= true then
 			end
 		end
 		return true
@@ -441,11 +441,11 @@ CoD["rankIconTable_mp"] = "gamedata/tables/mp/mp_rankicontable.csv"
 CoD["rankIconTable_zm"] = "gamedata/tables/zm/zm_rankicontable.csv"
 CoD["contractTable_mp"] = "gamedata/tables/mp/mp_contractTable.csv"
 CoD["maxRankByMode"] = {}
-registerVal4 = tonumber(Engine["TableLookup"](0.000000, "gamedata/tables/cp/cp_ranktable.csv", 0.000000, "maxrank", 1.000000))
+registerVal4 = tonumber(Engine["TableLookup"](0, "gamedata/tables/cp/cp_ranktable.csv", 0, "maxrank", 1))
 CoD["maxRankByMode"]["CP"] = registerVal4
-registerVal4 = tonumber(Engine["TableLookup"](0.000000, "gamedata/tables/mp/mp_ranktable.csv", 0.000000, "maxrank", 1.000000))
+registerVal4 = tonumber(Engine["TableLookup"](0, "gamedata/tables/mp/mp_ranktable.csv", 0, "maxrank", 1))
 CoD["maxRankByMode"]["MP"] = registerVal4
-registerVal4 = tonumber(Engine["TableLookup"](0.000000, "gamedata/tables/zm/zm_ranktable.csv", 0.000000, "maxrank", 1.000000))
+registerVal4 = tonumber(Engine["TableLookup"](0, "gamedata/tables/zm/zm_ranktable.csv", 0, "maxrank", 1))
 CoD["maxRankByMode"]["ZM"] = registerVal4
 CoD["isSinglePlayer"] = false
 local registerVal2 = Engine["GetCurrentExe"]()
@@ -474,9 +474,9 @@ local function __FUNC_1012E_()
 	local registerVal3 = registerVal2.snd_frontendTracksState:get()
 	if registerVal2 and registerVal3 == Enum.FrontendMusicTrackStates.FRONTEND_MUSIC_STATE_ON then
 		registerVal3 = Engine.GetTableRowCount(CoD.musicPlayerTable)
-		for index4=0.000000, (registerVal3 - 1.000000), 1.000000 do
+		for index4=0, (registerVal3 - 1), 1 do
 			local registerVal8 = registerVal2.snd_playMPFrontendMusicTrack[index4]:get()
-			if registerVal8 == 1.000000 then
+			if registerVal8 == 1 then
 				registerVal8 = Engine.TableLookup(nil, CoD.musicPlayerTable, Enum.MusicPlayerTableColumn.MUSIC_PLAYER_COLUMN_INDEX, index4, Enum.MusicPlayerTableColumn.MUSIC_PLAYER_COLUMN_ALIAS)
 				local registerVal11 = {}
 				registerVal11.alias = registerVal8
@@ -504,14 +504,14 @@ end
 CoD["SetupMusicTracks"] = __FUNC_10536_
 local function __FUNC_106F4_(arg0, arg1)
 	CoD.curLobbyTrack = nil
-	local registerVal3 = table.remove(CoD.musicTracks.queue, 1.000000)
+	local registerVal3 = table.remove(CoD.musicTracks.queue, 1)
 	CoD.curLobbyTrack = registerVal3
-	if 0.000000 < #CoD.musicTracks.queue and CoD.curLobbyTrack.loop then
+	if 0 < #CoD.musicTracks.queue and CoD.curLobbyTrack.loop then
 		table.insert(CoD.musicTracks.queue, CoD.curLobbyTrack)
 	end
 	Engine.PlaySound(CoD.curLobbyTrack.alias)
 	if CoD.curLobbyTrack and not arg1 then
-		if not arg1 or 1.000000 < #CoD.musicTracks.queue then
+		if not arg1 or 1 < #CoD.musicTracks.queue then
 			local registerVal2 = Engine.TableLookup(nil, CoD.musicPlayerTable, Enum.MusicPlayerTableColumn.MUSIC_PLAYER_COLUMN_ALIAS, CoD.curLobbyTrack.alias, Enum.MusicPlayerTableColumn.MUSIC_PLAYER_COLUMN_TITLE)
 			if registerVal2 ~= "" then
 				local registerVal5 = Engine.Localize("MENU_NOW_PLAYING")
@@ -524,14 +524,14 @@ local function __FUNC_106F4_(arg0, arg1)
 			registerVal3 = Engine.GetSoundPlaybackTime(CoD.curLobbyTrack.alias)
 		end
 		if LUI.primaryRoot.musicTrackTimer then
-			LUI.primaryRoot.musicTrackTimer.interval = (200.000000 + registerVal3)
+			LUI.primaryRoot.musicTrackTimer.interval = (200 + registerVal3)
 			LUI.primaryRoot.musicTrackTimer:reset()
 		else
 			local function __FUNC_10D41_()
 				CoD.NextMenuTrack()
 			end
 
-			local registerVal4 = LUI.UITimer.newElementTimer((200.000000 + registerVal3), false, __FUNC_10D41_)
+			local registerVal4 = LUI.UITimer.newElementTimer((200 + registerVal3), false, __FUNC_10D41_)
 			LUI.primaryRoot.musicTrackTimer = registerVal4
 			LUI.primaryRoot:addElement(LUI.primaryRoot.musicTrackTimer)
 		end
@@ -544,7 +544,7 @@ local function __FUNC_10DA4_(arg0, arg1)
 		local registerVal5 = {}
 		registerVal5.alias = arg0
 		registerVal5.loop = arg1
-		table.insert(CoD.musicTracks.queue, 1.000000, registerVal5)
+		table.insert(CoD.musicTracks.queue, 1, registerVal5)
 	else
 		local registerVal4 = {}
 		registerVal4.alias = arg0
@@ -707,7 +707,7 @@ local function __FUNC_11A2C_(arg0)
 			registerVal2 = Engine.GetModelForController(arg0.controller)
 			registerVal1 = Engine.CreateModel(registerVal2, "safehouse")
 			registerVal3 = Engine.CreateModel(registerVal1, "inClientBunk")
-			Engine.SetModelValue(registerVal3, 0.000000)
+			Engine.SetModelValue(registerVal3, 0)
 			local registerVal4 = Engine.GetGlobalModel()
 			registerVal3 = Engine.CreateModel(registerVal4, "lobbyRoot.headingKickerMode")
 			Engine.SetModelValue(registerVal3, "")
@@ -732,24 +732,24 @@ local function __FUNC_11A2C_(arg0)
 		CoD.emblemIconsTable = "gamedata/emblems/emblemIcons.csv"
 		CoD.statsTable = "gamedata/stats/zm/zm_statsTable.csv"
 	end
-	registerVal2 = tonumber(Engine.TableLookup(0.000000, CoD.rankTable, 0.000000, "maxrank", 1.000000))
+	registerVal2 = tonumber(Engine.TableLookup(0, CoD.rankTable, 0, "maxrank", 1))
 	CoD.MAX_RANK = registerVal2
-	registerVal2 = tonumber(Engine.TableLookup(0.000000, CoD.rankIconTable, 0.000000, "maxprestige", 1.000000))
+	registerVal2 = tonumber(Engine.TableLookup(0, CoD.rankIconTable, 0, "maxprestige", 1))
 	CoD.MAX_PRESTIGE = registerVal2
-	registerVal2 = tonumber(Engine.TableLookup(0.000000, CoD.rankTable, 0.000000, CoD.MAX_RANK, 7.000000))
+	registerVal2 = tonumber(Engine.TableLookup(0, CoD.rankTable, 0, CoD.MAX_RANK, 7))
 	CoD.MAX_RANKXP = registerVal2
-	registerVal2 = tonumber(Engine.TableLookup(0.000000, CoD.paragonRankTable, 0.000000, "maxrank", 1.000000))
+	registerVal2 = tonumber(Engine.TableLookup(0, CoD.paragonRankTable, 0, "maxrank", 1))
 	CoD.MAX_PARAGON_RANK = registerVal2
-	registerVal2 = tonumber(Engine.TableLookup(0.000000, CoD.paragonRankTable, 0.000000, CoD.MAX_PARAGON_RANK, 7.000000))
+	registerVal2 = tonumber(Engine.TableLookup(0, CoD.paragonRankTable, 0, CoD.MAX_PARAGON_RANK, 7))
 	CoD.MAX_PARAGON_RANKXP = registerVal2
-	registerVal2 = tonumber(Engine.TableLookup(0.000000, CoD.rankTable, 0.000000, "maxrankstarterpack", 1.000000))
+	registerVal2 = tonumber(Engine.TableLookup(0, CoD.rankTable, 0, "maxrankstarterpack", 1))
 	CoD.MAX_RANK_STARTER_PACK = registerVal2
 end
 
 CoD["SetupMode"] = __FUNC_11A2C_
 if CoD["perController"] == nil then
 	CoD["perController"] = {}
-	for index2=0.000000, 3.000000, 1.000000 do
+	for index2=0, 3, 1 do
 		CoD["perController"][index2] = {}
 	end
 end
@@ -817,42 +817,42 @@ LUI["DefaultFont"] = CoD["fonts"]["Default"]
 CoD["textSize"] = {}
 registerVal2 = Dvar["loc_language"]:"get"()
 if registerVal2 == CoD.LANGUAGE_RUSSIAN then
-	CoD["textSize"]["ExtraSmall"] = 20.000000
-	CoD["textSize"]["SmallItalic"] = 20.000000
-	CoD["textSize"]["Default"] = 21.000000
-	CoD["textSize"]["Italic"] = 21.000000
-	CoD["textSize"]["Condensed"] = 24.000000
-	CoD["textSize"]["Big"] = 36.000000
-	CoD["textSize"]["Morris"] = 42.000000
+	CoD["textSize"]["ExtraSmall"] = 20
+	CoD["textSize"]["SmallItalic"] = 20
+	CoD["textSize"]["Default"] = 21
+	CoD["textSize"]["Italic"] = 21
+	CoD["textSize"]["Condensed"] = 24
+	CoD["textSize"]["Big"] = 36
+	CoD["textSize"]["Morris"] = 42
 else
 	registerVal2 = Dvar["loc_language"]:"get"()
 	if registerVal2 == CoD.LANGUAGE_POLISH then
-		CoD["textSize"]["ExtraSmall"] = 16.000000
-		CoD["textSize"]["SmallItalic"] = 16.000000
-		CoD["textSize"]["Default"] = 19.000000
-		CoD["textSize"]["Italic"] = 21.000000
-		CoD["textSize"]["Condensed"] = 21.000000
-		CoD["textSize"]["Big"] = 32.000000
-		CoD["textSize"]["Morris"] = 42.000000
+		CoD["textSize"]["ExtraSmall"] = 16
+		CoD["textSize"]["SmallItalic"] = 16
+		CoD["textSize"]["Default"] = 19
+		CoD["textSize"]["Italic"] = 21
+		CoD["textSize"]["Condensed"] = 21
+		CoD["textSize"]["Big"] = 32
+		CoD["textSize"]["Morris"] = 42
 	else
 		registerVal2 = Dvar["loc_language"]:"get"()
 		registerVal2 = Dvar["loc_language"]:"get"()
 		if registerVal2 == CoD.LANGUAGE_JAPANESE or registerVal2 == CoD.LANGUAGE_FULLJAPANESE then
-			CoD["textSize"]["ExtraSmall"] = 15.000000
-			CoD["textSize"]["SmallItalic"] = 15.000000
-			CoD["textSize"]["Default"] = 17.000000
-			CoD["textSize"]["Italic"] = 17.000000
-			CoD["textSize"]["Condensed"] = 22.000000
-			CoD["textSize"]["Big"] = 40.000000
-			CoD["textSize"]["Morris"] = 52.000000
+			CoD["textSize"]["ExtraSmall"] = 15
+			CoD["textSize"]["SmallItalic"] = 15
+			CoD["textSize"]["Default"] = 17
+			CoD["textSize"]["Italic"] = 17
+			CoD["textSize"]["Condensed"] = 22
+			CoD["textSize"]["Big"] = 40
+			CoD["textSize"]["Morris"] = 52
 		else
-			CoD["textSize"]["ExtraSmall"] = 20.000000
-			CoD["textSize"]["SmallItalic"] = 20.000000
-			CoD["textSize"]["Default"] = 25.000000
-			CoD["textSize"]["Italic"] = 25.000000
-			CoD["textSize"]["Condensed"] = 30.000000
-			CoD["textSize"]["Big"] = 48.000000
-			CoD["textSize"]["Morris"] = 60.000000
+			CoD["textSize"]["ExtraSmall"] = 20
+			CoD["textSize"]["SmallItalic"] = 20
+			CoD["textSize"]["Default"] = 25
+			CoD["textSize"]["Italic"] = 25
+			CoD["textSize"]["Condensed"] = 30
+			CoD["textSize"]["Big"] = 48
+			CoD["textSize"]["Morris"] = 60
 		end
 	end
 end
@@ -878,7 +878,7 @@ local function __FUNC_12C60_(arg0)
 	for index10,value11 in registerVal7, registerVal8, registerVal9 do
 		if not nil then
 		end
-		if arg0 <= ((value11.size + CoD.textSize[value11.name]) / 2.000000) then
+		if arg0 <= ((value11.size + CoD.textSize[value11.name]) / 2) then
 		else
 		end
 	end
@@ -948,20 +948,20 @@ if CoD.isPC == true then
 	CoD["buttonStringsShortCut"]["emblem_scale"] = "^BBUTTON_EMBLEM_SCALE^"
 end
 CoD["white"] = {}
-CoD["white"]["r"] = 1.000000
-CoD["white"]["g"] = 1.000000
-CoD["white"]["b"] = 1.000000
+CoD["white"]["r"] = 1
+CoD["white"]["g"] = 1
+CoD["white"]["b"] = 1
 CoD["red"] = {}
 CoD["red"]["r"] = 0.730000
 CoD["red"]["g"] = 0.250000
 CoD["red"]["b"] = 0.250000
 CoD["brightRed"] = {}
-CoD["brightRed"]["r"] = 1.000000
+CoD["brightRed"]["r"] = 1
 CoD["brightRed"]["g"] = 0.190000
 CoD["brightRed"]["b"] = 0.190000
 CoD["yellow"] = {}
-CoD["yellow"]["r"] = 1.000000
-CoD["yellow"]["g"] = 1.000000
+CoD["yellow"]["r"] = 1
+CoD["yellow"]["g"] = 1
 CoD["yellow"]["b"] = 0.500000
 CoD["yellowGlow"] = {}
 CoD["yellowGlow"]["r"] = 0.900000
@@ -982,11 +982,11 @@ CoD["blue"]["b"] = 0.750000
 CoD["blueGlow"] = {}
 CoD["blueGlow"]["r"] = 0.680000
 CoD["blueGlow"]["g"] = 0.860000
-CoD["blueGlow"]["b"] = 1.000000
+CoD["blueGlow"]["b"] = 1
 CoD["lightBlue"] = {}
 CoD["lightBlue"]["r"] = 0.150000
 CoD["lightBlue"]["g"] = 0.550000
-CoD["lightBlue"]["b"] = 1.000000
+CoD["lightBlue"]["b"] = 1
 CoD["greenBlue"] = {}
 CoD["greenBlue"]["r"] = 0.260000
 CoD["greenBlue"]["g"] = 0.590000
@@ -1009,16 +1009,16 @@ CoD["visorBlue2"]["g"] = 0.545098
 CoD["visorBlue2"]["b"] = 0.513726
 CoD["visorBlue3"] = {}
 CoD["visorBlue3"]["r"] = 0.941177
-CoD["visorBlue3"]["g"] = 1.000000
+CoD["visorBlue3"]["g"] = 1
 CoD["visorBlue3"]["b"] = 0.996078
 CoD["visorBlue4"] = {}
 CoD["visorBlue4"]["r"] = 0.909804
-CoD["visorBlue4"]["g"] = 1.000000
+CoD["visorBlue4"]["g"] = 1
 CoD["visorBlue4"]["b"] = 0.976471
 CoD["offWhite"] = {}
-CoD["offWhite"]["r"] = 1.000000
-CoD["offWhite"]["g"] = 1.000000
-CoD["offWhite"]["b"] = 1.000000
+CoD["offWhite"]["r"] = 1
+CoD["offWhite"]["g"] = 1
+CoD["offWhite"]["b"] = 1
 CoD["gray"] = {}
 CoD["gray"]["r"] = 0.390000
 CoD["gray"]["g"] = 0.380000
@@ -1028,21 +1028,21 @@ CoD["offGray"]["r"] = 0.270000
 CoD["offGray"]["g"] = 0.280000
 CoD["offGray"]["b"] = 0.240000
 CoD["black"] = {}
-CoD["black"]["r"] = 0.000000
-CoD["black"]["g"] = 0.000000
-CoD["black"]["b"] = 0.000000
+CoD["black"]["r"] = 0
+CoD["black"]["g"] = 0
+CoD["black"]["b"] = 0
 CoD["orange"] = {}
 CoD["orange"]["r"] = 0.960000
 CoD["orange"]["g"] = 0.580000
 CoD["orange"]["b"] = 0.110000
 CoD["trueOrange"] = {}
-CoD["trueOrange"]["r"] = 1.000000
+CoD["trueOrange"]["r"] = 1
 CoD["trueOrange"]["g"] = 0.500000
-CoD["trueOrange"]["b"] = 0.000000
+CoD["trueOrange"]["b"] = 0
 CoD["BOIIOrange"] = {}
-CoD["BOIIOrange"]["r"] = 1.000000
+CoD["BOIIOrange"]["r"] = 1
 CoD["BOIIOrange"]["g"] = 0.400000
-CoD["BOIIOrange"]["b"] = 0.000000
+CoD["BOIIOrange"]["b"] = 0
 CoD["playerYellow"] = {}
 CoD["playerYellow"]["r"] = 0.920000
 CoD["playerYellow"]["g"] = 0.800000
@@ -1056,7 +1056,7 @@ CoD["playerRed"]["r"] = 0.730000
 CoD["playerRed"]["g"] = 0.250000
 CoD["playerRed"]["b"] = 0.250000
 CoD["ConsoleColors"] = {}
-registerVal2 = IsLuaCodeVersionAtLeast(18.000000)
+registerVal2 = IsLuaCodeVersionAtLeast(18)
 if registerVal2 then
 	local function __FUNC_12EF6_(arg0)
 		CoD.ConsoleColors[arg0.controller] = arg0.colors
@@ -1065,78 +1065,78 @@ if registerVal2 then
 	CoD["UpdateConsoleColors"] = __FUNC_12EF6_
 else
 	registerVal3 = Engine["GetMaxControllerCount"]()
-	for index2=0.000000, (registerVal3 - 1.000000), 1.000000 do
+	for index2=0, (registerVal3 - 1), 1 do
 		registerVal7 = {}
 		local registerVal8 = {}
-		registerVal8["r"] = 0.000000
-		registerVal8["g"] = 0.000000
-		registerVal8["b"] = 0.000000
-		registerVal8["a"] = 1.000000
+		registerVal8["r"] = 0
+		registerVal8["g"] = 0
+		registerVal8["b"] = 0
+		registerVal8["a"] = 1
 		local registerVal9 = {}
-		registerVal9["r"] = 1.000000
+		registerVal9["r"] = 1
 		registerVal9["g"] = 0.200000
 		registerVal9["b"] = 0.200000
-		registerVal9["a"] = 1.000000
+		registerVal9["a"] = 1
 		local registerVal10 = {}
-		registerVal10["r"] = 0.000000
-		registerVal10["g"] = 1.000000
-		registerVal10["b"] = 0.000000
-		registerVal10["a"] = 1.000000
+		registerVal10["r"] = 0
+		registerVal10["g"] = 1
+		registerVal10["b"] = 0
+		registerVal10["a"] = 1
 		local registerVal11 = {}
-		registerVal11["r"] = 1.000000
-		registerVal11["g"] = 1.000000
+		registerVal11["r"] = 1
+		registerVal11["g"] = 1
 		registerVal11["b"] = 0.500000
-		registerVal11["a"] = 1.000000
+		registerVal11["a"] = 1
 		local registerVal12 = {}
-		registerVal12["r"] = 0.000000
-		registerVal12["g"] = 0.000000
-		registerVal12["b"] = 1.000000
-		registerVal12["a"] = 1.000000
+		registerVal12["r"] = 0
+		registerVal12["g"] = 0
+		registerVal12["b"] = 1
+		registerVal12["a"] = 1
 		local registerVal13 = {}
-		registerVal13["r"] = 0.000000
-		registerVal13["g"] = 1.000000
-		registerVal13["b"] = 1.000000
-		registerVal13["a"] = 1.000000
+		registerVal13["r"] = 0
+		registerVal13["g"] = 1
+		registerVal13["b"] = 1
+		registerVal13["a"] = 1
 		local registerVal14 = {}
-		registerVal14["r"] = 1.000000
+		registerVal14["r"] = 1
 		registerVal14["g"] = 0.360000
-		registerVal14["b"] = 1.000000
-		registerVal14["a"] = 1.000000
+		registerVal14["b"] = 1
+		registerVal14["a"] = 1
 		local registerVal15 = {}
-		registerVal15["r"] = 1.000000
-		registerVal15["g"] = 1.000000
-		registerVal15["b"] = 1.000000
-		registerVal15["a"] = 1.000000
+		registerVal15["r"] = 1
+		registerVal15["g"] = 1
+		registerVal15["b"] = 1
+		registerVal15["a"] = 1
 		local registerVal16 = {}
 		registerVal16["r"] = 0.584000
 		registerVal16["g"] = 0.839000
 		registerVal16["b"] = 0.867000
-		registerVal16["a"] = 1.000000
+		registerVal16["a"] = 1
 		local registerVal17 = {}
 		registerVal17["r"] = 0.867000
 		registerVal17["g"] = 0.302000
 		registerVal17["b"] = 0.188000
-		registerVal17["a"] = 1.000000
+		registerVal17["a"] = 1
 		local registerVal18 = {}
 		registerVal18["r"] = 0.584000
 		registerVal18["g"] = 0.839000
 		registerVal18["b"] = 0.867000
-		registerVal18["a"] = 1.000000
+		registerVal18["a"] = 1
 		local registerVal19 = {}
 		registerVal19["r"] = 0.867000
 		registerVal19["g"] = 0.302000
 		registerVal19["b"] = 0.188000
-		registerVal19["a"] = 1.000000
+		registerVal19["a"] = 1
 		registerVal7 = {registerVal8, registerVal9, registerVal10, registerVal11, registerVal12, registerVal13, registerVal14, registerVal15, registerVal16, registerVal17, registerVal18, registerVal19}
 		CoD["ConsoleColors"][index2] = registerVal7
 	end
 end
-CoD["DefaultConsoleColorIndex"] = 8.000000
+CoD["DefaultConsoleColorIndex"] = 8
 CoD["RTSColors"] = {}
 CoD["RTSColors"]["red"] = {}
 CoD["RTSColors"]["red"]["r"] = 0.600000
-CoD["RTSColors"]["red"]["g"] = 0.000000
-CoD["RTSColors"]["red"]["b"] = 0.000000
+CoD["RTSColors"]["red"]["g"] = 0
+CoD["RTSColors"]["red"]["b"] = 0
 CoD["RTSColors"]["blue"] = {}
 CoD["RTSColors"]["blue"]["r"] = 0.230000
 CoD["RTSColors"]["blue"]["g"] = 0.860000
@@ -1157,7 +1157,7 @@ if CoD["isSinglePlayer"] then
 	CoD["DefaultTextColor"] = CoD["visorBlue4"]
 	CoD["ButtonTextColor"] = CoD["visorBlue4"]
 	CoD["DisabledTextColor"] = CoD["visorBlue1"]
-	CoD["DisabledAlpha"] = 1.000000
+	CoD["DisabledAlpha"] = 1
 else
 	CoD["DefaultTextColor"] = CoD["offWhite"]
 	registerVal4 = {}
@@ -1168,10 +1168,10 @@ else
 	CoD["DisabledTextColor"] = CoD["offWhite"]
 	CoD["DisabledAlpha"] = 0.500000
 end
-CoD["SCOREBOARD_SORT_DEFAULT"] = 0.000000
-CoD["SCOREBOARD_SORT_SCORE"] = 0.000000
-CoD["SCOREBOARD_SORT_ALPHABETICAL"] = 1.000000
-CoD["SCOREBOARD_SORT_CLIENTNUM"] = 2.000000
+CoD["SCOREBOARD_SORT_DEFAULT"] = 0
+CoD["SCOREBOARD_SORT_SCORE"] = 0
+CoD["SCOREBOARD_SORT_ALPHABETICAL"] = 1
+CoD["SCOREBOARD_SORT_CLIENTNUM"] = 2
 CoD["teamColorFriendly"] = {}
 registerVal8, registerVal9, registerVal10 = Dvar["g_TeamColor_MyTeam"]:"get"()
 CoD["teamColorFriendly"]["b"] = registerVal10
@@ -1184,9 +1184,9 @@ CoD["teamColorEnemy"]["g"] = registerVal9
 CoD["teamColorEnemy"]["r"] = registerVal8
 CoD["teamColor"] = {}
 CoD["teamColor"][Enum["team_t"]["TEAM_FREE"]] = {}
-CoD["teamColor"][Enum["team_t"]["TEAM_FREE"]]["r"] = 1.000000
-CoD["teamColor"][Enum["team_t"]["TEAM_FREE"]]["g"] = 1.000000
-CoD["teamColor"][Enum["team_t"]["TEAM_FREE"]]["b"] = 1.000000
+CoD["teamColor"][Enum["team_t"]["TEAM_FREE"]]["r"] = 1
+CoD["teamColor"][Enum["team_t"]["TEAM_FREE"]]["g"] = 1
+CoD["teamColor"][Enum["team_t"]["TEAM_FREE"]]["b"] = 1
 CoD["teamColor"][Enum["team_t"]["TEAM_ALLIES"]] = {}
 CoD["teamColor"][Enum["team_t"]["TEAM_AXIS"]] = {}
 CoD["teamColor"][Enum["team_t"]["TEAM_NEUTRAL"]] = {}
@@ -1212,9 +1212,9 @@ CoD["teamColor"][Enum["team_t"]["TEAM_SPECTATOR"]] = {}
 CoD["teamColor"][Enum["team_t"]["TEAM_SPECTATOR"]]["r"] = 0.745000
 CoD["teamColor"][Enum["team_t"]["TEAM_SPECTATOR"]]["g"] = 0.745000
 CoD["teamColor"][Enum["team_t"]["TEAM_SPECTATOR"]]["b"] = 0.745000
-registerVal4 = string["char"](20.000000)
+registerVal4 = string["char"](20)
 CoD["GMLOC_ON"] = registerVal4
-registerVal4 = string["char"](21.000000)
+registerVal4 = string["char"](21)
 CoD["GMLOC_OFF"] = registerVal4
 CoD["factionColor"] = {}
 CoD["factionColor"]["seals"] = {}
@@ -1234,86 +1234,86 @@ if not CoD["isMultiplayer"] then
 	CoD["teamName"][Enum["team_t"]["TEAM_DEAD"]] = "DEAD"
 end
 registerVal4 = {}
-registerVal4["Linear"] = 0.000000
-registerVal4["Elastic"] = 1.000000
-registerVal4["Back"] = 2.000000
-registerVal4["Bounce"] = 3.000000
+registerVal4["Linear"] = 0
+registerVal4["Elastic"] = 1
+registerVal4["Back"] = 2
+registerVal4["Bounce"] = 3
 CoD["TweenType"] = registerVal4
 CoD["textAlpha"] = 0.700000
 CoD["textAlphaBlackDark"] = 0.700000
 CoD["textAlphaBlackLight"] = 0.200000
 CoD["frameSubtitleHeight"] = CoD["textSize"]["Default"]
 CoD["frameSubtitleFont"] = CoD["fonts"]["Default"]
-CoD["SDSafeWidth"] = 864.000000
-CoD["SDSafeHeight"] = 648.000000
-CoD["HDSafeWidth"] = 1152.000000
+CoD["SDSafeWidth"] = 864
+CoD["SDSafeHeight"] = 648
+CoD["HDSafeWidth"] = 1152
 CoD["HDSafeHeight"] = CoD["SDSafeHeight"]
 registerVal4 = {}
-registerVal4["r"] = 1.000000
-registerVal4["g"] = 1.000000
-registerVal4["b"] = 1.000000
+registerVal4["r"] = 1
+registerVal4["g"] = 1
+registerVal4["b"] = 1
 CoD["HUDBaseColor"] = registerVal4
 CoD["HUDAlphaEmpty"] = 0.600000
-CoD["HUDAlphaFull"] = 1.000000
+CoD["HUDAlphaFull"] = 1
 CoD["LEVEL_FIRST"] = "angola"
 CoD["LEVEL_COOP_FIRST"] = "cp_mi_eth_prologue"
-CoD["THUMBSTICK_DEFAULT"] = 0.000000
-CoD["THUMBSTICK_SOUTHPAW"] = 1.000000
-CoD["THUMBSTICK_LEGACY"] = 2.000000
-CoD["THUMBSTICK_LEGACYSOUTHPAW"] = 3.000000
-CoD["BUTTONS_DEFAULT"] = 0.000000
-CoD["BUTTONS_EXPERIMENTAL"] = 1.000000
-CoD["BUTTONS_LEFTY"] = 2.000000
-CoD["BUTTONS_NOMAD"] = 3.000000
-CoD["BUTTONS_CHARLIE"] = 4.000000
-CoD["BUTTONS_GUNSLINGER"] = 5.000000
-CoD["BUTTONS_BUMPERJUMPER"] = 6.000000
-CoD["BUTTONS_BUMPERTACTICAL"] = 7.000000
-CoD["BUTTONS_STICKMOVE"] = 8.000000
-CoD["TRIGGERS_DEFAULT"] = 0.000000
-CoD["TRIGGERS_FLIPPED"] = 1.000000
-CoD["START_GAME_CAMPAIGN"] = 0.000000
-CoD["START_GAME_MULTIPLAYER"] = 1.000000
-CoD["START_GAME_ZOMBIES"] = 2.000000
-CoD["DEMO_CONTROLLER_CONFIG_DEFAULT"] = 0.000000
-CoD["DEMO_CONTROLLER_CONFIG_DIGITAL"] = 1.000000
-CoD["DEMO_CONTROLLER_CONFIG_BADBOT"] = 2.000000
-CoD["PS3_INSTALL_NOT_PRESENT"] = 0.000000
-CoD["PS3_INSTALL_PRESENT"] = 1.000000
-CoD["PS3_INSTALL_UNAVAILABLE"] = 2.000000
-CoD["PS3_INSTALL_CORRUPT_OR_OUTDATED"] = 3.000000
+CoD["THUMBSTICK_DEFAULT"] = 0
+CoD["THUMBSTICK_SOUTHPAW"] = 1
+CoD["THUMBSTICK_LEGACY"] = 2
+CoD["THUMBSTICK_LEGACYSOUTHPAW"] = 3
+CoD["BUTTONS_DEFAULT"] = 0
+CoD["BUTTONS_EXPERIMENTAL"] = 1
+CoD["BUTTONS_LEFTY"] = 2
+CoD["BUTTONS_NOMAD"] = 3
+CoD["BUTTONS_CHARLIE"] = 4
+CoD["BUTTONS_GUNSLINGER"] = 5
+CoD["BUTTONS_BUMPERJUMPER"] = 6
+CoD["BUTTONS_BUMPERTACTICAL"] = 7
+CoD["BUTTONS_STICKMOVE"] = 8
+CoD["TRIGGERS_DEFAULT"] = 0
+CoD["TRIGGERS_FLIPPED"] = 1
+CoD["START_GAME_CAMPAIGN"] = 0
+CoD["START_GAME_MULTIPLAYER"] = 1
+CoD["START_GAME_ZOMBIES"] = 2
+CoD["DEMO_CONTROLLER_CONFIG_DEFAULT"] = 0
+CoD["DEMO_CONTROLLER_CONFIG_DIGITAL"] = 1
+CoD["DEMO_CONTROLLER_CONFIG_BADBOT"] = 2
+CoD["PS3_INSTALL_NOT_PRESENT"] = 0
+CoD["PS3_INSTALL_PRESENT"] = 1
+CoD["PS3_INSTALL_UNAVAILABLE"] = 2
+CoD["PS3_INSTALL_CORRUPT_OR_OUTDATED"] = 3
 CoD["SENSITIVITY_1"] = 0.400000
 CoD["SENSITIVITY_2"] = 0.600000
 CoD["SENSITIVITY_3"] = 0.800000
-CoD["SENSITIVITY_4"] = 1.000000
+CoD["SENSITIVITY_4"] = 1
 CoD["SENSITIVITY_5"] = 1.200000
 CoD["SENSITIVITY_6"] = 1.400000
 CoD["SENSITIVITY_7"] = 1.600000
 CoD["SENSITIVITY_8"] = 1.800000
-CoD["SENSITIVITY_9"] = 2.000000
+CoD["SENSITIVITY_9"] = 2
 CoD["SENSITIVITY_10"] = 2.250000
 CoD["SENSITIVITY_11"] = 2.500000
-CoD["SENSITIVITY_12"] = 3.000000
+CoD["SENSITIVITY_12"] = 3
 CoD["SENSITIVITY_13"] = 3.500000
-CoD["SENSITIVITY_14"] = 4.000000
+CoD["SENSITIVITY_14"] = 4
 CoD["DIFFICULTY"] = {}
-CoD["DIFFICULTY"][0.000000] = "MENU_RECRUIT"
-CoD["DIFFICULTY"][1.000000] = "MENU_REGULAR"
-CoD["DIFFICULTY"][2.000000] = "MENU_HARDENED"
-CoD["DIFFICULTY"][3.000000] = "MENU_VETERAN"
-CoD["DIFFICULTY"][4.000000] = "MENU_HEROIC"
+CoD["DIFFICULTY"][0] = "MENU_RECRUIT"
+CoD["DIFFICULTY"][1] = "MENU_REGULAR"
+CoD["DIFFICULTY"][2] = "MENU_HARDENED"
+CoD["DIFFICULTY"][3] = "MENU_VETERAN"
+CoD["DIFFICULTY"][4] = "MENU_HEROIC"
 CoD["DIFFICULTY_DESC"] = {}
-CoD["DIFFICULTY_DESC"][0.000000] = "MENU_DIFF_RECRUIT_DESC"
-CoD["DIFFICULTY_DESC"][1.000000] = "MENU_DIFF_REGULAR_DESC"
-CoD["DIFFICULTY_DESC"][2.000000] = "MENU_DIFF_HARDENED_DESC"
-CoD["DIFFICULTY_DESC"][3.000000] = "MENU_DIFF_VETERAN_DESC"
-CoD["DIFFICULTY_DESC"][4.000000] = "MENU_DIFF_HEROIC_DESC"
+CoD["DIFFICULTY_DESC"][0] = "MENU_DIFF_RECRUIT_DESC"
+CoD["DIFFICULTY_DESC"][1] = "MENU_DIFF_REGULAR_DESC"
+CoD["DIFFICULTY_DESC"][2] = "MENU_DIFF_HARDENED_DESC"
+CoD["DIFFICULTY_DESC"][3] = "MENU_DIFF_VETERAN_DESC"
+CoD["DIFFICULTY_DESC"][4] = "MENU_DIFF_HEROIC_DESC"
 CoD["DIFFICULTY_ICON"] = {}
-CoD["DIFFICULTY_ICON"][0.000000] = "playlist_sp_recr"
-CoD["DIFFICULTY_ICON"][1.000000] = "playlist_sp_reg"
-CoD["DIFFICULTY_ICON"][2.000000] = "playlist_sp_hard"
-CoD["DIFFICULTY_ICON"][3.000000] = "playlist_sp_vet"
-CoD["DIFFICULTY_ICON"][4.000000] = "playlist_sp_real"
+CoD["DIFFICULTY_ICON"][0] = "playlist_sp_recr"
+CoD["DIFFICULTY_ICON"][1] = "playlist_sp_reg"
+CoD["DIFFICULTY_ICON"][2] = "playlist_sp_hard"
+CoD["DIFFICULTY_ICON"][3] = "playlist_sp_vet"
+CoD["DIFFICULTY_ICON"][4] = "playlist_sp_real"
 CoD["BRIGHTNESS_1"] = 0.100000
 CoD["BRIGHTNESS_2"] = 0.200000
 CoD["BRIGHTNESS_3"] = 0.300000
@@ -1323,71 +1323,71 @@ CoD["BRIGHTNESS_6"] = 0.600000
 CoD["BRIGHTNESS_7"] = 0.700000
 CoD["BRIGHTNESS_8"] = 0.800000
 CoD["BRIGHTNESS_9"] = 0.900000
-CoD["BRIGHTNESS_10"] = 1.000000
+CoD["BRIGHTNESS_10"] = 1
 if CoD["isWIIU"] then
-	CoD["BIND_PLAYER"] = 0.000000
-	CoD["BIND_PLAYER2"] = 1.000000
-	CoD["BIND_VEHICLE"] = 2.000000
-	CoD["BIND_TWIST"] = 3.000000
+	CoD["BIND_PLAYER"] = 0
+	CoD["BIND_PLAYER2"] = 1
+	CoD["BIND_VEHICLE"] = 2
+	CoD["BIND_TWIST"] = 3
 else
-	CoD["BIND_PLAYER"] = 0.000000
-	CoD["BIND_VEHICLE"] = 1.000000
+	CoD["BIND_PLAYER"] = 0
+	CoD["BIND_VEHICLE"] = 1
 end
-CoD["SESSIONMODE_OFFLINE"] = 0.000000
-CoD["SESSIONMODE_SYSTEMLINK"] = 1.000000
-CoD["SESSIONMODE_ONLINE"] = 2.000000
-CoD["GAMEMODE_PUBLIC_MATCH"] = 0.000000
-CoD["GAMEMODE_PRIVATE_MATCH"] = 1.000000
-CoD["GAMEMODE_LOCAL_SPLITSCREEN"] = 2.000000
-CoD["GAMEMODE_LEAGUE_MATCH"] = 3.000000
-CoD["GAMEMODE_FREERUN"] = 4.000000
-CoD["GAMEMODE_THEATER"] = 5.000000
-CoD["GAMEMODE_MANUAL_PLAYLIST"] = 6.000000
-CoD["GAMEMODE_RTS"] = 7.000000
-CoD["OBJECTIVESTATE_EMPTY"] = 0.000000
-CoD["OBJECTIVESTATE_ACTIVE"] = 1.000000
-CoD["OBJECTIVESTATE_INVISIBLE"] = 2.000000
-CoD["OBJECTIVESTATE_DONE"] = 3.000000
-CoD["OBJECTIVESTATE_CURRENT"] = 4.000000
-CoD["OBJECTIVESTATE_FAILED"] = 5.000000
-CoD["FRIEND_NOTJOINABLE"] = 0.000000
-CoD["FRIEND_JOINABLE"] = 1.000000
-CoD["FRIEND_AUTOJOINABLE"] = 2.000000
-CoD["FRIEND_AUTOJOINED"] = 3.000000
-CoD["MaxPlayerListRows"] = 19.000000
+CoD["SESSIONMODE_OFFLINE"] = 0
+CoD["SESSIONMODE_SYSTEMLINK"] = 1
+CoD["SESSIONMODE_ONLINE"] = 2
+CoD["GAMEMODE_PUBLIC_MATCH"] = 0
+CoD["GAMEMODE_PRIVATE_MATCH"] = 1
+CoD["GAMEMODE_LOCAL_SPLITSCREEN"] = 2
+CoD["GAMEMODE_LEAGUE_MATCH"] = 3
+CoD["GAMEMODE_FREERUN"] = 4
+CoD["GAMEMODE_THEATER"] = 5
+CoD["GAMEMODE_MANUAL_PLAYLIST"] = 6
+CoD["GAMEMODE_RTS"] = 7
+CoD["OBJECTIVESTATE_EMPTY"] = 0
+CoD["OBJECTIVESTATE_ACTIVE"] = 1
+CoD["OBJECTIVESTATE_INVISIBLE"] = 2
+CoD["OBJECTIVESTATE_DONE"] = 3
+CoD["OBJECTIVESTATE_CURRENT"] = 4
+CoD["OBJECTIVESTATE_FAILED"] = 5
+CoD["FRIEND_NOTJOINABLE"] = 0
+CoD["FRIEND_JOINABLE"] = 1
+CoD["FRIEND_AUTOJOINABLE"] = 2
+CoD["FRIEND_AUTOJOINED"] = 3
+CoD["MaxPlayerListRows"] = 19
 registerVal4 = {}
-registerVal4["friend"] = 0.000000
-registerVal4["recentPlayer"] = 1.000000
-registerVal4["party"] = 2.000000
-registerVal4["platform"] = 3.000000
-registerVal4["facebook"] = 4.000000
-registerVal4["elite"] = 5.000000
-registerVal4["gameInvites"] = 6.000000
-registerVal4["clan"] = 7.000000
-registerVal4["friendRequest"] = 8.000000
-registerVal4["leagueFriend"] = 9.000000
-registerVal4["leaderboard"] = -1.000000
+registerVal4["friend"] = 0
+registerVal4["recentPlayer"] = 1
+registerVal4["party"] = 2
+registerVal4["platform"] = 3
+registerVal4["facebook"] = 4
+registerVal4["elite"] = 5
+registerVal4["gameInvites"] = 6
+registerVal4["clan"] = 7
+registerVal4["friendRequest"] = 8
+registerVal4["leagueFriend"] = 9
+registerVal4["leaderboard"] = -1
 CoD["playerListType"] = registerVal4
-CoD["STATS_LOCATION_NORMAL"] = 0.000000
-CoD["STATS_LOCATION_FORCE_NORMAL"] = 1.000000
-CoD["STATS_LOCATION_STABLE"] = 2.000000
-CoD["STATS_LOCATION_OTHERPLAYER"] = 3.000000
-CoD["MILESTONE_GLOBAL"] = 0.000000
-CoD["MILESTONE_WEAPON"] = 1.000000
-CoD["MILESTONE_GAMEMODE"] = 2.000000
-CoD["MILESTONE_GROUP"] = 3.000000
-CoD["MILESTONE_ATTACHMENTS"] = 4.000000
-CoD["MILESTONE_SPECIALIST"] = 5.000000
-CoD["MILESTONE_DAILY"] = 6.000000
-CoD["LB_FILTER_NONE"] = 0.000000
-CoD["LB_FILTER_FRIENDS"] = 1.000000
-CoD["LB_FILTER_LOBBY_MEMBERS"] = 2.000000
-CoD["LB_FILTER_ELITE"] = 3.000000
-CoD["LB_FILTER_FACEBOOK_FRIENDS"] = 4.000000
-CoD["REQUEST_MULTI_LB_READ_COMBAT_RECORD_DATA"] = 1.000000
-CoD["REQUEST_MULTI_LB_READ_MINI_LBS"] = 2.000000
-CoD["MaxMomentum"] = 0.000000
-CoD["SplitscreenMultiplier"] = 2.000000
+CoD["STATS_LOCATION_NORMAL"] = 0
+CoD["STATS_LOCATION_FORCE_NORMAL"] = 1
+CoD["STATS_LOCATION_STABLE"] = 2
+CoD["STATS_LOCATION_OTHERPLAYER"] = 3
+CoD["MILESTONE_GLOBAL"] = 0
+CoD["MILESTONE_WEAPON"] = 1
+CoD["MILESTONE_GAMEMODE"] = 2
+CoD["MILESTONE_GROUP"] = 3
+CoD["MILESTONE_ATTACHMENTS"] = 4
+CoD["MILESTONE_SPECIALIST"] = 5
+CoD["MILESTONE_DAILY"] = 6
+CoD["LB_FILTER_NONE"] = 0
+CoD["LB_FILTER_FRIENDS"] = 1
+CoD["LB_FILTER_LOBBY_MEMBERS"] = 2
+CoD["LB_FILTER_ELITE"] = 3
+CoD["LB_FILTER_FACEBOOK_FRIENDS"] = 4
+CoD["REQUEST_MULTI_LB_READ_COMBAT_RECORD_DATA"] = 1
+CoD["REQUEST_MULTI_LB_READ_MINI_LBS"] = 2
+CoD["MaxMomentum"] = 0
+CoD["SplitscreenMultiplier"] = 2
 CoD["SplitscreenNotificationMultiplier"] = 1.500000
 if not CoD["LeaguesData"] then
 	CoD["LeaguesData"] = {}
@@ -1397,35 +1397,35 @@ if not CoD["LeaguesData"] then
 	CoD["LeaguesData"]["TeamSubdivisionInfo"]["fetchStatus"] = {}
 	CoD["LeaguesData"]["TeamSubdivisionInfo"]["data"] = {}
 end
-CoD["LeaguesData"]["LEAGUE_OUTCOME_BASE"] = 0.000000
-CoD["LeaguesData"]["LEAGUE_OUTCOME_WINNER"] = 1.000000
-CoD["LeaguesData"]["LEAGUE_OUTCOME_LOSER"] = 2.000000
-CoD["LeaguesData"]["LEAGUE_OUTCOME_PRE_LOSER"] = 3.000000
-CoD["LeaguesData"]["LEAGUE_OUTCOME_RESET"] = 4.000000
-CoD["LeaguesData"]["LEAGUE_OUTCOME_DRAW"] = 5.000000
-CoD["LeaguesData"]["LEAGUE_STAT_FLOAT_SKILL"] = 0.000000
-CoD["LeaguesData"]["LEAGUE_STAT_FLOAT_VARIANCE"] = 1.000000
-CoD["LeaguesData"]["LEAGUE_STAT_FLOAT_PLACEMENT_SKILL"] = 2.000000
-CoD["LeaguesData"]["LEAGUE_STAT_FLOAT_COUNT"] = 3.000000
-CoD["LeaguesData"]["LEAGUE_STAT_INT_RANKPOINTS"] = 0.000000
-CoD["LeaguesData"]["LEAGUE_STAT_INT_PLAYED"] = 1.000000
-CoD["LeaguesData"]["LEAGUE_STAT_INT_WINS"] = 2.000000
-CoD["LeaguesData"]["LEAGUE_STAT_INT_LOSSES"] = 3.000000
-CoD["LeaguesData"]["LEAGUE_STAT_INT_BONUS_USED"] = 4.000000
-CoD["LeaguesData"]["LEAGUE_STAT_INT_BONUS_TIME"] = 5.000000
-CoD["LeaguesData"]["LEAGUE_STAT_INT_STREAK"] = 6.000000
-CoD["LeaguesData"]["LEAGUE_STAT_INT_CAREER_WINS"] = 7.000000
-CoD["LeaguesData"]["LEAGUE_STAT_INT_COUNT"] = 8.000000
-CoD["PARTYHOST_STATE_NONE"] = 0.000000
-CoD["PARTYHOST_STATE_EDITING_GAME_OPTIONS"] = 1.000000
-CoD["PARTYHOST_STATE_MODIFYING_CAC"] = 2.000000
-CoD["PARTYHOST_STATE_MODIFYING_REWARDS"] = 3.000000
-CoD["PARTYHOST_STATE_VIEWING_PLAYERCARD"] = 4.000000
-CoD["PARTYHOST_STATE_SELECTING_PLAYLIST"] = 5.000000
-CoD["PARTYHOST_STATE_SELECTING_MAP"] = 6.000000
-CoD["PARTYHOST_STATE_SELECTING_GAMETYPE"] = 7.000000
-CoD["PARTYHOST_STATE_VIEWING_COD_TV"] = 8.000000
-CoD["PARTYHOST_STATE_COUNTDOWN_CANCELLED"] = 9.000000
+CoD["LeaguesData"]["LEAGUE_OUTCOME_BASE"] = 0
+CoD["LeaguesData"]["LEAGUE_OUTCOME_WINNER"] = 1
+CoD["LeaguesData"]["LEAGUE_OUTCOME_LOSER"] = 2
+CoD["LeaguesData"]["LEAGUE_OUTCOME_PRE_LOSER"] = 3
+CoD["LeaguesData"]["LEAGUE_OUTCOME_RESET"] = 4
+CoD["LeaguesData"]["LEAGUE_OUTCOME_DRAW"] = 5
+CoD["LeaguesData"]["LEAGUE_STAT_FLOAT_SKILL"] = 0
+CoD["LeaguesData"]["LEAGUE_STAT_FLOAT_VARIANCE"] = 1
+CoD["LeaguesData"]["LEAGUE_STAT_FLOAT_PLACEMENT_SKILL"] = 2
+CoD["LeaguesData"]["LEAGUE_STAT_FLOAT_COUNT"] = 3
+CoD["LeaguesData"]["LEAGUE_STAT_INT_RANKPOINTS"] = 0
+CoD["LeaguesData"]["LEAGUE_STAT_INT_PLAYED"] = 1
+CoD["LeaguesData"]["LEAGUE_STAT_INT_WINS"] = 2
+CoD["LeaguesData"]["LEAGUE_STAT_INT_LOSSES"] = 3
+CoD["LeaguesData"]["LEAGUE_STAT_INT_BONUS_USED"] = 4
+CoD["LeaguesData"]["LEAGUE_STAT_INT_BONUS_TIME"] = 5
+CoD["LeaguesData"]["LEAGUE_STAT_INT_STREAK"] = 6
+CoD["LeaguesData"]["LEAGUE_STAT_INT_CAREER_WINS"] = 7
+CoD["LeaguesData"]["LEAGUE_STAT_INT_COUNT"] = 8
+CoD["PARTYHOST_STATE_NONE"] = 0
+CoD["PARTYHOST_STATE_EDITING_GAME_OPTIONS"] = 1
+CoD["PARTYHOST_STATE_MODIFYING_CAC"] = 2
+CoD["PARTYHOST_STATE_MODIFYING_REWARDS"] = 3
+CoD["PARTYHOST_STATE_VIEWING_PLAYERCARD"] = 4
+CoD["PARTYHOST_STATE_SELECTING_PLAYLIST"] = 5
+CoD["PARTYHOST_STATE_SELECTING_MAP"] = 6
+CoD["PARTYHOST_STATE_SELECTING_GAMETYPE"] = 7
+CoD["PARTYHOST_STATE_VIEWING_COD_TV"] = 8
+CoD["PARTYHOST_STATE_COUNTDOWN_CANCELLED"] = 9
 CoD["partyHostStateText"] = {}
 CoD["partyHostStateText"][CoD["PARTYHOST_STATE_NONE"]] = ""
 registerVal4 = Engine["Localize"]("MENU_EDITING_GAME_OPTIONS")
@@ -1446,59 +1446,59 @@ registerVal4 = Engine["Localize"]("MENU_VIEWING_COD_TV")
 CoD["partyHostStateText"][CoD["PARTYHOST_STATE_VIEWING_COD_TV"]] = registerVal4
 registerVal4 = Engine["Localize"]("MENU_COUNTDOWN_CANCELLED")
 CoD["partyHostStateText"][CoD["PARTYHOST_STATE_COUNTDOWN_CANCELLED"]] = registerVal4
-CoD["SESSION_REJOIN_CANCEL_JOIN_SESSION"] = 0.000000
-CoD["SESSION_REJOIN_CHECK_FOR_SESSION"] = 1.000000
-CoD["SESSION_REJOIN_JOIN_SESSION"] = 2.000000
-CoD["FEATURE_BAN_LIVE_MP"] = 1.000000
-CoD["FEATURE_BAN_LIVE_ZOMBIE"] = 2.000000
-CoD["FEATURE_BAN_LEADERBOARD_WRITE_MP"] = 3.000000
-CoD["FEATURE_BAN_LEADERBOARD_WRITE_ZOMBIE"] = 4.000000
-CoD["FEATURE_BAN_MP_SPLIT_SCREEN"] = 5.000000
-CoD["FEATURE_BAN_EMBLEM_EDITOR"] = 6.000000
-CoD["FEATURE_BAN_PIRACY"] = 7.000000
-CoD["FEATURE_BAN_PRESTIGE"] = 8.000000
-CoD["FEATURE_BAN_LIVE_STREAMING"] = 9.000000
-CoD["FEATURE_BAN_LIVE_STREAMING_CAMERA"] = 10.000000
-CoD["FEATURE_BAN_LEAGUES_GAMEPLAY"] = 11.000000
-CoD["FEATURE_BAN_HOSTING"] = 12.000000
-CoD["FEATURE_BAN_PRESTIGE_EXTRAS"] = 13.000000
-CoD["SYSINFO_VERSION_NUMBER"] = 0.000000
-CoD["SYSINFO_CONNECTIVITY_INFO"] = 1.000000
-CoD["SYSINFO_NAT_TYPE"] = 2.000000
-CoD["SYSINFO_CUSTOMER_SUPPORT_LINK"] = 3.000000
-CoD["SYSINFO_BANDWIDTH"] = 4.000000
-CoD["SYSINFO_IP_ADDRESS"] = 5.000000
-CoD["SYSINFO_EXTERNAL_IP_ADDRESS"] = 6.000000
-CoD["SYSINFO_INTERNAL_IP_ADDRESS"] = 7.000000
-CoD["SYSINFO_GEOGRAPHICAL_REGION"] = 8.000000
-CoD["SYSINFO_Q"] = 9.000000
-CoD["SYSINFO_CONSOLE_ID"] = 10.000000
-CoD["SYSINFO_MAC_ADDRESS"] = 11.000000
-CoD["SYSINFO_NAT_TYPE_LOBBY"] = 12.000000
-CoD["SYSINFO_CONNECTION_TYPE"] = 13.000000
-CoD["RECORD_EVENT_DW_EREG_ENTRY_ERROR"] = 46.000000
-CoD["RECORD_EVENT_RATE_MATCH"] = 400.000000
-CoD["RECORD_EVENT_VOTE_MTX"] = 425.000000
+CoD["SESSION_REJOIN_CANCEL_JOIN_SESSION"] = 0
+CoD["SESSION_REJOIN_CHECK_FOR_SESSION"] = 1
+CoD["SESSION_REJOIN_JOIN_SESSION"] = 2
+CoD["FEATURE_BAN_LIVE_MP"] = 1
+CoD["FEATURE_BAN_LIVE_ZOMBIE"] = 2
+CoD["FEATURE_BAN_LEADERBOARD_WRITE_MP"] = 3
+CoD["FEATURE_BAN_LEADERBOARD_WRITE_ZOMBIE"] = 4
+CoD["FEATURE_BAN_MP_SPLIT_SCREEN"] = 5
+CoD["FEATURE_BAN_EMBLEM_EDITOR"] = 6
+CoD["FEATURE_BAN_PIRACY"] = 7
+CoD["FEATURE_BAN_PRESTIGE"] = 8
+CoD["FEATURE_BAN_LIVE_STREAMING"] = 9
+CoD["FEATURE_BAN_LIVE_STREAMING_CAMERA"] = 10
+CoD["FEATURE_BAN_LEAGUES_GAMEPLAY"] = 11
+CoD["FEATURE_BAN_HOSTING"] = 12
+CoD["FEATURE_BAN_PRESTIGE_EXTRAS"] = 13
+CoD["SYSINFO_VERSION_NUMBER"] = 0
+CoD["SYSINFO_CONNECTIVITY_INFO"] = 1
+CoD["SYSINFO_NAT_TYPE"] = 2
+CoD["SYSINFO_CUSTOMER_SUPPORT_LINK"] = 3
+CoD["SYSINFO_BANDWIDTH"] = 4
+CoD["SYSINFO_IP_ADDRESS"] = 5
+CoD["SYSINFO_EXTERNAL_IP_ADDRESS"] = 6
+CoD["SYSINFO_INTERNAL_IP_ADDRESS"] = 7
+CoD["SYSINFO_GEOGRAPHICAL_REGION"] = 8
+CoD["SYSINFO_Q"] = 9
+CoD["SYSINFO_CONSOLE_ID"] = 10
+CoD["SYSINFO_MAC_ADDRESS"] = 11
+CoD["SYSINFO_NAT_TYPE_LOBBY"] = 12
+CoD["SYSINFO_CONNECTION_TYPE"] = 13
+CoD["RECORD_EVENT_DW_EREG_ENTRY_ERROR"] = 46
+CoD["RECORD_EVENT_RATE_MATCH"] = 400
+CoD["RECORD_EVENT_VOTE_MTX"] = 425
 CoD["CodCaster_TeamIdentity"] = {}
-CoD["EMBLEM"] = 0.000000
-CoD["BACKING"] = 1.000000
+CoD["EMBLEM"] = 0
+CoD["BACKING"] = 1
 CoD["emblem"] = {}
-CoD["emblem"]["INVALID_ID"] = -1.000000
-CoD["emblem"]["MAX_COLOR_COMPONENT_VALUE"] = 255.000000
-CoD["emblem"]["MAX_GRADIENT_SLIDER_VALUE"] = 100.000000
+CoD["emblem"]["INVALID_ID"] = -1
+CoD["emblem"]["MAX_COLOR_COMPONENT_VALUE"] = 255
+CoD["emblem"]["MAX_GRADIENT_SLIDER_VALUE"] = 100
 registerVal4 = {}
-registerVal4["FULL"] = 0.000000
-registerVal4["EMPTY"] = 1.000000
+registerVal4["FULL"] = 0
+registerVal4["EMPTY"] = 1
 CoD["emblem"]["CLIPBOARDSTATE"] = registerVal4
 registerVal4 = {}
-registerVal4["REPLACE"] = 0.000000
-registerVal4["INSERT"] = 1.000000
+registerVal4["REPLACE"] = 0
+registerVal4["INSERT"] = 1
 CoD["emblem"]["ADDDECAL"] = registerVal4
 CoD["Paintshop"] = {}
 CoD["Paintshop"]["ChooseWeapon"] = {}
 registerVal4 = {}
-registerVal4["WEAPONLIST"] = 1.000000
-registerVal4["PAINTJOBS"] = 2.000000
+registerVal4["WEAPONLIST"] = 1
+registerVal4["PAINTJOBS"] = 2
 CoD["Paintshop"]["ChooseWeapon"] = registerVal4
 CoD["Paintshop"]["View"] = {}
 registerVal4 = {}
@@ -1519,42 +1519,42 @@ registerVal7["view_string_ref"] = "MENU_PAINTSHOP_VIEW_RIGHT"
 registerVal7["edit_side_ref"] = "MENU_PAINTSHOP_EDIT_LAYER"
 registerVal4 = {registerVal5, registerVal6, registerVal7}
 CoD["Paintshop"]["View"] = registerVal4
-CoD["emblem"]["BlackMarketDecalCategory"] = 5.000000
+CoD["emblem"]["BlackMarketDecalCategory"] = 5
 registerVal4 = {}
 registerVal5 = {}
 registerVal5["type"] = "ICON"
 registerVal5["displayName"] = "MENU_EMBLEM_SELECTOR_ICONS_TAB"
-registerVal5["category"] = 1.000000
+registerVal5["category"] = 1
 registerVal6 = {}
 registerVal6["type"] = "PATTERNS"
 registerVal6["displayName"] = "MENU_EMBLEM_SELECTOR_PATTERNS_TAB"
-registerVal6["category"] = 2.000000
+registerVal6["category"] = 2
 registerVal7 = {}
 registerVal7["type"] = "TOOLS"
 registerVal7["displayName"] = "MENU_EMBLEM_SELECTOR_TOOLS_TAB"
-registerVal7["category"] = 3.000000
+registerVal7["category"] = 3
 registerVal8 = {}
 registerVal8["type"] = "TYPE"
 registerVal8["displayName"] = "MENU_EMBLEM_SELECTOR_TYPE_TAB"
-registerVal8["category"] = 4.000000
+registerVal8["category"] = 4
 registerVal9 = {}
 registerVal9["type"] = "BLACKMARKET"
 registerVal9["displayName"] = "MENU_BLACK_MARKET"
-registerVal9["category"] = 5.000000
+registerVal9["category"] = 5
 registerVal4 = {registerVal5, registerVal6, registerVal7, registerVal8, registerVal9}
 CoD["emblem"]["DECALTABS"] = registerVal4
-CoD["emblem"]["BlackMarketEmblemCategory"] = 3.000000
+CoD["emblem"]["BlackMarketEmblemCategory"] = 3
 registerVal4 = {}
 registerVal5 = {}
-registerVal5["category"] = 1.000000
+registerVal5["category"] = 1
 registerVal5["type"] = "general"
 registerVal5["name"] = "MENU_EMBLEM_MATERIAL_GENERAL"
 registerVal6 = {}
-registerVal6["category"] = 2.000000
+registerVal6["category"] = 2
 registerVal6["type"] = "camo"
 registerVal6["name"] = "MENU_EMBLEM_MATERIAL_CAMO"
 registerVal7 = {}
-registerVal7["category"] = 3.000000
+registerVal7["category"] = 3
 registerVal7["type"] = "loot"
 registerVal7["name"] = "MENU_BLACK_MARKET"
 registerVal4 = {registerVal5, registerVal6, registerVal7}
@@ -1562,42 +1562,42 @@ CoD["emblem"]["MaterialCategory"] = registerVal4
 CoD["Craft"] = {}
 registerVal4 = {}
 registerVal5 = {}
-registerVal5["index"] = 1.000000
+registerVal5["index"] = 1
 registerVal5["weapon_category"] = "weapon_smg"
 registerVal5["lowercaseName"] = "MPUI_SUB_MACHINE_GUNS"
 registerVal5["name"] = "MPUI_WEAPON_SMG_ABBR_CAPS_WITH_S"
 registerVal5["loadout_slot"] = "primary"
 registerVal5["weapon_image"] = "t7_wpn_build_kit_smg"
 registerVal6 = {}
-registerVal6["index"] = 2.000000
+registerVal6["index"] = 2
 registerVal6["weapon_category"] = "weapon_assault"
 registerVal6["lowercaseName"] = "MPUI_ASSAULT_RIFLES"
 registerVal6["name"] = "MPUI_WEAPON_ASSAULT_CAPS"
 registerVal6["loadout_slot"] = "primary"
 registerVal6["weapon_image"] = "t7_wpn_build_kit_ar"
 registerVal7 = {}
-registerVal7["index"] = 3.000000
+registerVal7["index"] = 3
 registerVal7["weapon_category"] = "weapon_cqb"
 registerVal7["lowercaseName"] = "MPUI_CQBS"
 registerVal7["name"] = "MPUI_CQBS_CAPS"
 registerVal7["loadout_slot"] = "primary"
 registerVal7["weapon_image"] = "t7_wpn_build_kit_shotgun"
 registerVal8 = {}
-registerVal8["index"] = 4.000000
+registerVal8["index"] = 4
 registerVal8["weapon_category"] = "weapon_lmg"
 registerVal8["lowercaseName"] = "MPUI_LIGHT_MACHINE_GUNS"
 registerVal8["name"] = "MPUI_WEAPON_LMG_ABBR_CAPS_WITH_S"
 registerVal8["loadout_slot"] = "primary"
 registerVal8["weapon_image"] = "t7_wpn_build_kit_lmg"
 registerVal9 = {}
-registerVal9["index"] = 5.000000
+registerVal9["index"] = 5
 registerVal9["weapon_category"] = "weapon_sniper"
 registerVal9["lowercaseName"] = "MPUI_SNIPER_RIFLES"
 registerVal9["name"] = "MPUI_WEAPON_SNIPER_CAPS"
 registerVal9["loadout_slot"] = "primary"
 registerVal9["weapon_image"] = "t7_wpn_build_kit_sniper"
 registerVal10 = {}
-registerVal10["index"] = 6.000000
+registerVal10["index"] = 6
 registerVal10["weapon_category"] = "secondary"
 registerVal10["lowercaseName"] = "MPUI_WEAPON_SECONDARIES"
 registerVal10["name"] = "MPUI_WEAPON_SECONDARIES_CAPS"
@@ -1607,49 +1607,49 @@ registerVal4 = {registerVal5, registerVal6, registerVal7, registerVal8, register
 CoD["Craft"]["WeaponGroupNames"] = registerVal4
 registerVal4 = {}
 registerVal5 = {}
-registerVal5["index"] = 1.000000
+registerVal5["index"] = 1
 registerVal5["weapon_category"] = ""
 registerVal5["disabled"] = false
 registerVal5["name"] = "MENU_ALL_CAPS"
 registerVal5["loadout_slot"] = ""
 registerVal6 = {}
-registerVal6["index"] = 2.000000
+registerVal6["index"] = 2
 registerVal6["weapon_category"] = "weapon_smg"
 registerVal6["disabled"] = true
 registerVal6["name"] = "MPUI_WEAPON_SMG_ABBR_CAPS_WITH_S"
 registerVal6["loadout_slot"] = "primary"
 registerVal7 = {}
-registerVal7["index"] = 3.000000
+registerVal7["index"] = 3
 registerVal7["weapon_category"] = "weapon_assault"
 registerVal7["disabled"] = true
 registerVal7["name"] = "MPUI_WEAPON_ASSAULT_CAPS"
 registerVal7["loadout_slot"] = "primary"
 registerVal8 = {}
-registerVal8["index"] = 4.000000
+registerVal8["index"] = 4
 registerVal8["weapon_category"] = "weapon_cqb"
 registerVal8["disabled"] = true
 registerVal8["name"] = "MPUI_CQBS_CAPS"
 registerVal8["loadout_slot"] = "primary"
 registerVal9 = {}
-registerVal9["index"] = 5.000000
+registerVal9["index"] = 5
 registerVal9["weapon_category"] = "weapon_lmg"
 registerVal9["disabled"] = true
 registerVal9["name"] = "MPUI_WEAPON_LMG_ABBR_CAPS_WITH_S"
 registerVal9["loadout_slot"] = "primary"
 registerVal10 = {}
-registerVal10["index"] = 6.000000
+registerVal10["index"] = 6
 registerVal10["weapon_category"] = "weapon_sniper"
 registerVal10["disabled"] = true
 registerVal10["name"] = "MPUI_WEAPON_SNIPER_CAPS"
 registerVal10["loadout_slot"] = "primary"
 registerVal11 = {}
-registerVal11["index"] = 7.000000
+registerVal11["index"] = 7
 registerVal11["weapon_category"] = "weapon_launcher"
 registerVal11["disabled"] = true
 registerVal11["name"] = "MPUI_WEAPON_LAUNCHER_CAPS"
 registerVal11["loadout_slot"] = "secondary"
 registerVal12 = {}
-registerVal12["index"] = 8.000000
+registerVal12["index"] = 8
 registerVal12["weapon_category"] = "weapon_knife"
 registerVal12["disabled"] = true
 registerVal12["name"] = "MPUI_WEAPON_KNIFE_CAPS"
@@ -1657,56 +1657,56 @@ registerVal12["loadout_slot"] = "secondary"
 registerVal4 = {registerVal5, registerVal6, registerVal7, registerVal8, registerVal9, registerVal10, registerVal11, registerVal12}
 CoD["Craft"]["PublishedPaintjobsGroupNames"] = registerVal4
 registerVal4 = {}
-registerVal4["NumBuffsPerPack"] = 5.000000
-registerVal4["NumPacks"] = 10.000000
+registerVal4["NumBuffsPerPack"] = 5
+registerVal4["NumPacks"] = 10
 CoD["BubbleGumBuffs"] = registerVal4
 CoD["StoreFeaturedCategory"] = "FEATURED"
-CoD["CONTENT_DEV_MAP_INDEX"] = -1.000000
-CoD["CONTENT_ORIGINAL_MAP_INDEX"] = 0.000000
-CoD["CONTENT_DLC0_INDEX"] = 1.000000
-CoD["CONTENT_DLCZM0_INDEX"] = 2.000000
-CoD.CONTENT_DLC1_INDEX = 3.000000
-CoD.CONTENT_DLC2_INDEX = 4.000000
-CoD.CONTENT_DLC3_INDEX = 5.000000
-CoD.CONTENT_DLC4_INDEX = 6.000000
-CoD.CONTENT_DLC5_INDEX = 7.000000
-CoD.CONTENT_DLC6_INDEX = 12.000000
-CoD["CONTENT_MODS_INDEX"] = 999.000000
-CoD["DLC_CAMO_MENU_VIEWED"] = 0.000000
-CoD["DLC_BACKINGS_MENU_VIEWED"] = 1.000000
-CoD["DLC_RETICLES_MENU_VIEWED"] = 2.000000
-CoD["INGAMESTORE_MENU_VIEWED"] = 3.000000
-CoD["UI_SCREENSHOT_TYPE_SCREENSHOT"] = 0.000000
-CoD["UI_SCREENSHOT_TYPE_THUMBNAIL"] = 1.000000
-CoD["UI_SCREENSHOT_TYPE_MOTD"] = 2.000000
-CoD["UI_SCREENSHOT_TYPE_EMBLEM"] = 3.000000
+CoD["CONTENT_DEV_MAP_INDEX"] = -1
+CoD["CONTENT_ORIGINAL_MAP_INDEX"] = 0
+CoD["CONTENT_DLC0_INDEX"] = 1
+CoD["CONTENT_DLCZM0_INDEX"] = 2
+CoD.CONTENT_DLC1_INDEX = 3
+CoD.CONTENT_DLC2_INDEX = 4
+CoD.CONTENT_DLC3_INDEX = 5
+CoD.CONTENT_DLC4_INDEX = 6
+CoD.CONTENT_DLC5_INDEX = 7
+CoD.CONTENT_DLC6_INDEX = 12
+CoD["CONTENT_MODS_INDEX"] = 999
+CoD["DLC_CAMO_MENU_VIEWED"] = 0
+CoD["DLC_BACKINGS_MENU_VIEWED"] = 1
+CoD["DLC_RETICLES_MENU_VIEWED"] = 2
+CoD["INGAMESTORE_MENU_VIEWED"] = 3
+CoD["UI_SCREENSHOT_TYPE_SCREENSHOT"] = 0
+CoD["UI_SCREENSHOT_TYPE_THUMBNAIL"] = 1
+CoD["UI_SCREENSHOT_TYPE_MOTD"] = 2
+CoD["UI_SCREENSHOT_TYPE_EMBLEM"] = 3
 CoD["EntityType"] = {}
-CoD["EntityType"]["ET_GENERAL"] = 0.000000
-CoD["EntityType"]["ET_PLAYER"] = 1.000000
-CoD["EntityType"]["ET_PLAYER_CORPSE"] = 2.000000
-CoD["EntityType"]["ET_ITEM"] = 3.000000
-CoD["EntityType"]["ET_MISSILE"] = 4.000000
-CoD["EntityType"]["ET_INVISIBLE"] = 5.000000
-CoD["EntityType"]["ET_SCRIPTMOVER"] = 6.000000
-CoD["EntityType"]["ET_SOUND_BLEND"] = 7.000000
-CoD["EntityType"]["ET_FX"] = 8.000000
-CoD["EntityType"]["ET_LOOP_FX"] = 9.000000
-CoD["EntityType"]["ET_PRIMARY_LIGHT"] = 10.000000
-CoD["EntityType"]["ET_TURRET"] = 11.000000
-CoD["EntityType"]["ET_HELICOPTER"] = 12.000000
-CoD["EntityType"]["ET_PLANE"] = 13.000000
-CoD["EntityType"]["ET_VEHICLE"] = 14.000000
-CoD["EntityType"]["ET_VEHICLE_CORPSE"] = 15.000000
-CoD["EntityType"]["ET_ACTOR"] = 16.000000
-CoD["EntityType"]["ET_ACTOR_SPAWNER"] = 17.000000
-CoD["EntityType"]["ET_ACTOR_CORPSE"] = 18.000000
-CoD["EntityType"]["ET_STREAMER_HINT"] = 19.000000
-CoD["EntityType"]["ET_ZBARRIER"] = 20.000000
+CoD["EntityType"]["ET_GENERAL"] = 0
+CoD["EntityType"]["ET_PLAYER"] = 1
+CoD["EntityType"]["ET_PLAYER_CORPSE"] = 2
+CoD["EntityType"]["ET_ITEM"] = 3
+CoD["EntityType"]["ET_MISSILE"] = 4
+CoD["EntityType"]["ET_INVISIBLE"] = 5
+CoD["EntityType"]["ET_SCRIPTMOVER"] = 6
+CoD["EntityType"]["ET_SOUND_BLEND"] = 7
+CoD["EntityType"]["ET_FX"] = 8
+CoD["EntityType"]["ET_LOOP_FX"] = 9
+CoD["EntityType"]["ET_PRIMARY_LIGHT"] = 10
+CoD["EntityType"]["ET_TURRET"] = 11
+CoD["EntityType"]["ET_HELICOPTER"] = 12
+CoD["EntityType"]["ET_PLANE"] = 13
+CoD["EntityType"]["ET_VEHICLE"] = 14
+CoD["EntityType"]["ET_VEHICLE_CORPSE"] = 15
+CoD["EntityType"]["ET_ACTOR"] = 16
+CoD["EntityType"]["ET_ACTOR_SPAWNER"] = 17
+CoD["EntityType"]["ET_ACTOR_CORPSE"] = 18
+CoD["EntityType"]["ET_STREAMER_HINT"] = 19
+CoD["EntityType"]["ET_ZBARRIER"] = 20
 CoD["SupplyDrop"] = {}
-CoD["SupplyDrop"]["SUPPLY_DROP_CRATE_STATE_NONE"] = 0.000000
-CoD["SupplyDrop"]["SUPPLY_DROP_CRATE_STATE_CAPTURE"] = 1.000000
-CoD["SupplyDrop"]["SUPPLY_DROP_CRATE_STATE_HACK"] = 2.000000
-CoD["SupplyDrop"]["SUPPLY_DROP_CRATE_STATE_DISARM"] = 3.000000
+CoD["SupplyDrop"]["SUPPLY_DROP_CRATE_STATE_NONE"] = 0
+CoD["SupplyDrop"]["SUPPLY_DROP_CRATE_STATE_CAPTURE"] = 1
+CoD["SupplyDrop"]["SUPPLY_DROP_CRATE_STATE_HACK"] = 2
+CoD["SupplyDrop"]["SUPPLY_DROP_CRATE_STATE_DISARM"] = 3
 local function __FUNC_12F94_()
 	local registerVal0 = Engine.GameModeIsMode(CoD.GAMEMODE_LEAGUE_MATCH)
 	if not registerVal0 then
@@ -1718,10 +1718,10 @@ end
 CoD["IsLeagueOrCustomMatch"] = __FUNC_12F94_
 local function __FUNC_13088_()
 	local registerVal0 = LUI.UIElement.new()
-	registerVal0:setLeftRight(true, true, 0.000000, 0.000000)
-	registerVal0:setTopBottom(true, true, 0.000000, 0.000000)
-	registerVal0:setPriority(100.000000)
-	registerVal0:setRGB(0.000000, 0.000000, 1.000000)
+	registerVal0:setLeftRight(true, true, 0, 0)
+	registerVal0:setTopBottom(true, true, 0, 0)
+	registerVal0:setPriority(100)
+	registerVal0:setRGB(0, 0, 1)
 	registerVal0:setAlpha(0.500000)
 	if not CoD.isPC then
 		registerVal0:setupSafeAreaBoundary()
@@ -1751,7 +1751,7 @@ local function __FUNC_1333D_(arg0, arg1, arg2)
 	if not arg2 then
 		local registerVal3 = Engine.CurrentSessionMode()
 	end
-	if arg1 == 0.000000 then
+	if arg1 == 0 then
 		return Engine.GetRankName(arg0, registerVal3)
 	else
 		registerVal3 = Engine.GetPrestigeCap(registerVal3)
@@ -1764,7 +1764,7 @@ end
 
 CoD["GetRankName"] = __FUNC_1333D_
 local function __FUNC_134B7_(arg0, arg1, arg2, arg3)
-	if arg0 < 0.000000 or arg1 < 0.000000 then
+	if arg0 < 0 or arg1 < 0 then
 		return ""
 	end
 	local registerVal4 = IsGameModeParagonCapable(arg3)
@@ -1890,14 +1890,14 @@ CoD["isHost"] = __FUNC_13E85_
 local function __FUNC_13F06_(arg0)
 	local registerVal1 = Engine.CanPauseGame()
 	if registerVal1 then
-		if CoD.InGameMenu.m_unpauseDisabled and CoD.InGameMenu.m_unpauseDisabled[(arg0 + 1.000000)] ~= nil and 0.000000 < CoD.InGameMenu.m_unpauseDisabled[(arg0 + 1.000000)] then
+		if CoD.InGameMenu.m_unpauseDisabled and CoD.InGameMenu.m_unpauseDisabled[(arg0 + 1)] ~= nil and 0 < CoD.InGameMenu.m_unpauseDisabled[(arg0 + 1)] then
 			return false
 		end
 		registerVal1 = CoD.isRankedGame()
 		local registerVal2 = CoD.isHost()
 		local registerVal3 = Engine.HostMigrationWaitingForPlayers()
 		local registerVal4 = Engine.DvarInt(nil, "g_gameEnded")
-		if registerVal1 and registerVal2 and not registerVal3 and registerVal4 ~= 1.000000 then
+		if registerVal1 and registerVal2 and not registerVal3 and registerVal4 ~= 1 then
 			return false
 		end
 	end
@@ -1944,13 +1944,13 @@ CoD["isXuidPrivatePartyHost"] = __FUNC_14496_
 local function __FUNC_14552_(arg0)
 	local registerVal1 = string.format("%.0f", arg0)
 	local registerVal2 = string.len(registerVal1)
-	for index4=registerVal2, 1.000000, -3.000000 do
-		if (index4 - 2.000000) < 1.000000 then
+	for index4=registerVal2, 1, -3 do
+		if (index4 - 2) < 1 then
 		end
 		if nil == nil then
-			local registerVal9 = string.sub(registerVal1, 1.000000, index4)
+			local registerVal9 = string.sub(registerVal1, 1, index4)
 		else
-			registerVal9 = string.sub(registerVal1, 1.000000, index4)
+			registerVal9 = string.sub(registerVal1, 1, index4)
 		end
 	end
 	return (registerVal9 .. "," .. registerVal9)
@@ -1959,9 +1959,9 @@ end
 CoD["separateNumberWithCommas"] = __FUNC_14552_
 local function __FUNC_1469B_(arg0, arg1)
 	if arg0 ~= nil and arg1 ~= nil then
-		local registerVal5 = tonumber(Engine.TableLookupGetColumnValueForRow(arg0, arg1, 1.000000))
-		local registerVal6 = tonumber(Engine.TableLookupGetColumnValueForRow(arg0, (arg1 + 1.000000), 1.000000))
-		if 0.000000 < registerVal5 or registerVal6 == 1.000000 then
+		local registerVal5 = tonumber(Engine.TableLookupGetColumnValueForRow(arg0, arg1, 1))
+		local registerVal6 = tonumber(Engine.TableLookupGetColumnValueForRow(arg0, (arg1 + 1), 1))
+		if 0 < registerVal5 or registerVal6 == 1 then
 		end
 		if true == true then
 			local registerVal7 = Engine.Localize(("CHALLENGE_TIER_" .. registerVal5))
@@ -1973,9 +1973,9 @@ end
 CoD["GetLocalizedTierText"] = __FUNC_1469B_
 local function __FUNC_14805_(arg0, arg1, arg2)
 	if arg1 ~= nil and arg2 ~= nil then
-		local registerVal3 = tonumber(Engine.TableLookupGetColumnValueForRow(arg1, arg2, 1.000000))
-		local registerVal4 = tonumber(Engine.TableLookupGetColumnValueForRow(arg1, (arg2 + 1.000000), 1.000000))
-		if 0.000000 < registerVal3 or registerVal4 == 1.000000 then
+		local registerVal3 = tonumber(Engine.TableLookupGetColumnValueForRow(arg1, arg2, 1))
+		local registerVal4 = tonumber(Engine.TableLookupGetColumnValueForRow(arg1, (arg2 + 1), 1))
+		if 0 < registerVal3 or registerVal4 == 1 then
 			return true
 		end
 	end
@@ -1985,8 +1985,8 @@ end
 CoD["IsTieredChallenge"] = __FUNC_14805_
 local function __FUNC_14906_(arg0, arg1, arg2, arg3)
 	local registerVal4 = Engine.GetItemUnlockLevel(arg1, arg3)
-	local registerVal5 = CoD.GetRankName(registerVal4, 0.000000, arg3)
-	return Engine.Localize(arg2, registerVal5, (registerVal4 + 1.000000))
+	local registerVal5 = CoD.GetRankName(registerVal4, 0, arg3)
+	return Engine.Localize(arg2, registerVal5, (registerVal4 + 1))
 end
 
 CoD["GetUnlockRankAndLevelForItemIndex"] = __FUNC_14906_
@@ -2019,7 +2019,7 @@ local function __FUNC_14CA8_(arg0)
 	local registerVal3 = tonumber(registerVal1)
 	local registerVal4 = tonumber(CoD.MAX_PRESTIGE)
 	registerVal3 = tonumber(registerVal2)
-	if registerVal3 >= (registerVal4 - 1.000000) or CoD.MAX_RANKXP > registerVal3 then
+	if registerVal3 >= (registerVal4 - 1) or CoD.MAX_RANKXP > registerVal3 then
 	end
 	return true
 end
@@ -2043,7 +2043,7 @@ CoD["PrestigeNext"] = __FUNC_14E34_
 local function __FUNC_14FB3_(arg0)
 	local registerVal1 = tonumber(Engine.GetStatByName(arg0, "PLEVEL"))
 	local registerVal2 = tonumber(CoD.MAX_PRESTIGE)
-	if (registerVal2 - 1.000000) <= registerVal1 then
+	if (registerVal2 - 1) <= registerVal1 then
 	end
 	return ""
 end
@@ -2053,7 +2053,7 @@ local function __FUNC_150AB_(arg0)
 	local registerVal1 = Engine.GetStatByName(arg0, "PLEVEL")
 	local registerVal2 = tonumber(registerVal1)
 	local registerVal3 = tonumber(CoD.MAX_PRESTIGE)
-	if (registerVal3 - 1.000000) > registerVal2 then
+	if (registerVal3 - 1) > registerVal2 then
 	end
 	return true
 end
@@ -2067,7 +2067,7 @@ local function __FUNC_1519D_(arg0)
 	local registerVal5 = IsStarterPack(arg0)
 	if registerVal5 then
 		registerVal5 = tonumber(CoD.MAX_RANK_STARTER_PACK)
-		if registerVal1 < registerVal5 and registerVal1 >= registerVal2 or registerVal3 ~= 0.000000 then
+		if registerVal1 < registerVal5 and registerVal1 >= registerVal2 or registerVal3 ~= 0 then
 		end
 		return true
 	end
@@ -2199,7 +2199,7 @@ end
 CoD["canMutePlayer"] = __FUNC_15D64_
 local function __FUNC_15E65_(arg0, arg1)
 	local registerVal2 = Engine.GetMutedStatus(arg0, arg1)
-	if registerVal2 ~= 1.000000 then
+	if registerVal2 ~= 1 then
 	end
 	return true
 end
@@ -2287,7 +2287,7 @@ CoD["canKickPlayer"] = __FUNC_16195_
 local function __FUNC_1649E_(arg0, arg1, arg2)
 	local registerVal3 = CoD.canInviteToGame(arg0, arg1)
 	if registerVal3 then
-		Engine.SendInviteByXuid(arg0, arg1, 0.000000)
+		Engine.SendInviteByXuid(arg0, arg1, 0)
 	else
 		DebugPrint("^1LUI: ^2cannot send invite.")
 	end
@@ -2312,7 +2312,7 @@ local function __FUNC_165AB_(arg0, arg1, arg2)
 		table.insert(CoD.perController[arg0].invites, registerVal6)
 	else
 		registerVal5 = Engine.seconds()
-		if (value8.timestamp + 15.000000) < registerVal5 then
+		if (value8.timestamp + 15) < registerVal5 then
 			registerVal4 = Engine.seconds()
 			value8.timestamp = registerVal4
 		else
@@ -2440,7 +2440,7 @@ local function __FUNC_17619_(arg0)
 	local registerVal1 = CoD.GetEditorProperties(arg0, "isGradientMode")
 	local registerVal2 = CoD.GetEditorProperties(arg0, "colorNum")
 	if registerVal2 ~= nil and registerVal1 ~= nil then
-		if registerVal1 == 1.000000 and registerVal2 == Enum.CustomizationColorNum.CUSTOMIZATION_COLOR_1 then
+		if registerVal1 == 1 and registerVal2 == Enum.CustomizationColorNum.CUSTOMIZATION_COLOR_1 then
 			return Engine.GetSelectedLayerColor1(arg0)
 		end
 		return Engine.GetSelectedLayerColor(arg0)
@@ -2452,14 +2452,14 @@ CoD["GetSelectedColor"] = __FUNC_17619_
 local function __FUNC_177F1_(arg0)
 	local registerVal1 = Engine.GetSelectedLayerColor(arg0)
 	local registerVal2 = Engine.GetSelectedLayerColor1(arg0)
-	CoD.SetEditorProperties(arg0, 0.000000, "isColor0NoColor")
-	CoD.SetEditorProperties(arg0, 0.000000, "isColor1NoColor")
+	CoD.SetEditorProperties(arg0, 0, "isColor0NoColor")
+	CoD.SetEditorProperties(arg0, 0, "isColor1NoColor")
 	if registerVal1.red == registerVal2.red and registerVal1.green == registerVal2.green and registerVal1.blue == registerVal2.blue then
-		if registerVal1.alpha == 0.000000 then
-			CoD.SetEditorProperties(arg0, 1.000000, "isColor0NoColor")
+		if registerVal1.alpha == 0 then
+			CoD.SetEditorProperties(arg0, 1, "isColor0NoColor")
 		end
-		if registerVal2.alpha == 0.000000 then
-			CoD.SetEditorProperties(arg0, 1.000000, "isColor1NoColor")
+		if registerVal2.alpha == 0 then
+			CoD.SetEditorProperties(arg0, 1, "isColor1NoColor")
 		end
 	end
 end
@@ -2629,7 +2629,7 @@ local function __FUNC_188E0_(arg0, arg1, arg2)
 			end
 		end
 	end
-	for index6=0.000000, 255.000000, 1.000000 do
+	for index6=0, 255, 1 do
 		local registerVal11 = CoD.CACUtility.GetIdForItemRef(index6)
 		local registerVal12 = CoD.BlackMarketUtility.IsBlackMarketItem(registerVal11)
 		if CoD.isCampaign and not CoD.isFrontend then
@@ -2657,7 +2657,7 @@ local function __FUNC_188E0_(arg0, arg1, arg2)
 		end
 		__FUNC_1946A_(registerVal14)
 		registerVal14 = Engine.GetModelValue(Engine.GetModel(registerVal14, "allocation"))
-		if false and registerVal14 and 0.000000 <= registerVal14 then
+		if false and registerVal14 and 0 <= registerVal14 then
 			registerVal14 = arg1(registerVal14)
 			if arg0 or registerVal14 then
 				if not {}.filterList then
@@ -2703,7 +2703,7 @@ local function __FUNC_19822_(arg0)
 	local registerVal3 = Engine.GetModelForController(arg0)
 	local registerVal2 = Engine.CreateModel(registerVal3, "TeamIdentity.ColorList")
 	registerVal3 = Engine.StructTableRowCount(CoD.codcasterTeamIdentityColorTable)
-	for index4=0.000000, (registerVal3 - 1.000000), 1.000000 do
+	for index4=0, (registerVal3 - 1), 1 do
 		local registerVal8 = Engine.StructTableLookupNumber(CoD.codcasterTeamIdentityColorTable, "id", index4, "colorR")
 		local registerVal9 = Engine.StructTableLookupNumber(CoD.codcasterTeamIdentityColorTable, "id", index4, "colorG")
 		local registerVal10 = Engine.StructTableLookupNumber(CoD.codcasterTeamIdentityColorTable, "id", index4, "colorB")
@@ -2757,7 +2757,7 @@ local function __FUNC_1A193_(arg0)
 	local registerVal3 = Engine.GetModelForController(arg0)
 	local registerVal2 = Engine.CreateModel(registerVal3, "TeamIdentity.LogoList")
 	registerVal3 = Engine.StructTableRowCount(CoD.codcasterTeamIdentityLogoTable)
-	for index4=0.000000, (registerVal3 - 1.000000), 1.000000 do
+	for index4=0, (registerVal3 - 1), 1 do
 		local registerVal8 = Engine.StructTableLookupString(CoD.codcasterTeamIdentityLogoTable, "id", index4, "logo_name")
 		local registerVal9 = Engine.StructTableLookupString(CoD.codcasterTeamIdentityLogoTable, "id", index4, "logo_icon")
 		local registerVal10 = Engine.CreateModel(registerVal2, ("logo_" .. index4))
@@ -2796,7 +2796,7 @@ CoD["emblem"]["ColorList"] = nil
 local function __FUNC_1A6E7_(arg0)
 	local registerVal3 = Engine.GetModelForController(arg0)
 	local registerVal2 = Engine.CreateModel(registerVal3, "Emblem.EmblemColorList")
-	for index6=0.000000, ((Enum.CustomizationColorSwatch.CUSTOMIZATION_COLOR_SWATCH_ROWS * Enum.CustomizationColorSwatch.CUSTOMIZATION_COLOR_SWATCH_COLUMNS) - 1.000000), 1.000000 do
+	for index6=0, ((Enum.CustomizationColorSwatch.CUSTOMIZATION_COLOR_SWATCH_ROWS * Enum.CustomizationColorSwatch.CUSTOMIZATION_COLOR_SWATCH_COLUMNS) - 1), 1 do
 		local registerVal12, registerVal13, registerVal14 = Engine.GetEmblemSwatchColor((index6 / Enum.CustomizationColorSwatch.CUSTOMIZATION_COLOR_SWATCH_COLUMNS), (index6 % Enum.CustomizationColorSwatch.CUSTOMIZATION_COLOR_SWATCH_COLUMNS))
 		local registerVal15 = Engine.CreateModel(registerVal2, ("color_" .. index6))
 		local registerVal17 = Engine.CreateModel(registerVal15, "color")
@@ -2810,7 +2810,7 @@ CoD["GetEmblemColorList"] = __FUNC_1A6E7_
 CoD["GunsmithWeaponOptionsTable"] = nil
 local function __FUNC_1A9E8_(arg0, arg1, arg2)
 	local registerVal4 = CoD.GetCustomization(arg0, "weapon_index")
-	CoD.GetWeaponOptionsTableForCategory(arg0, {}, Enum.eWeaponOptionGroup.WEAPONOPTION_GROUP_CAMO, registerVal4, 0.000000, false)
+	CoD.GetWeaponOptionsTableForCategory(arg0, {}, Enum.eWeaponOptionGroup.WEAPONOPTION_GROUP_CAMO, registerVal4, 0, false)
 	return {}
 end
 
@@ -2831,7 +2831,7 @@ local function __FUNC_1AB33_(arg0, arg1, arg2, arg3, arg4, arg5)
 		local registerVal5 = Engine.GetModelValue(registerVal4)
 		local registerVal6 = CoD.StoreUtility.IsCWLPackageEntitlement(registerVal5)
 		registerVal6 = Engine.GetProfileVarInt(arg0, registerVal5)
-		if not registerVal2 and registerVal2 and registerVal3 and registerVal2 == "camo" and registerVal3 == "extras" and registerVal5 and registerVal5 ~= "" and registerVal6 and registerVal6 == 1.000000 then
+		if not registerVal2 and registerVal2 and registerVal3 and registerVal2 == "camo" and registerVal3 == "extras" and registerVal5 and registerVal5 ~= "" and registerVal6 and registerVal6 == 1 then
 			return true
 		end
 		return false
@@ -2840,7 +2840,7 @@ local function __FUNC_1AB33_(arg0, arg1, arg2, arg3, arg4, arg5)
 	if CoD.CACUtility.EmptyItemIndex < arg3 then
 		local registerVal11 = Engine.GetItemRef(arg3)
 		local registerVal13 = Engine.GetNumWeaponOptionsForGroup(arg2)
-		for index12=0.000000, registerVal13, 1.000000 do
+		for index12=0, registerVal13, 1 do
 			local registerVal16 = Engine.GetWeaponOptionGroupIndex(index12, arg2)
 			if arg2 == Enum.eWeaponOptionGroup.WEAPONOPTION_GROUP_CAMO then
 				local registerVal20 = Engine.TableLookup(nil, CoD.attachmentTable, Enum.attachmentTableColumn_e.ATTACHMENTTABLE_COLUMN_INDEX, registerVal16, Enum.attachmentTableColumn_e.ATTACHMENTTABLE_COLUMN_ATTACHPOINT, "camo", Enum.attachmentTableColumn_e.ATTACHMENTTABLE_COLUMN_REFERENCE)
@@ -2848,7 +2848,7 @@ local function __FUNC_1AB33_(arg0, arg1, arg2, arg3, arg4, arg5)
 				local registerVal21 = IsProgressionEnabled(arg0)
 				if registerVal21 and registerVal20 == "mp" then
 					if registerVal20 == "camo_darkmatter" then
-						registerVal21 = CoD.getStatsMilestoneTable(1.000000, Enum.eModes.MODE_MULTIPLAYER)
+						registerVal21 = CoD.getStatsMilestoneTable(1, Enum.eModes.MODE_MULTIPLAYER)
 						local registerVal22 = Engine.TableFindRows(registerVal21, Enum.milestoneTableColumns_t.MILESTONE_COLUMN_UNLOCKITEM, "camo_darkmatter")
 						local registerVal23, registerVal24, registerVal25 = ipairs(registerVal22)
 						for index26,value27 in registerVal23, registerVal24, registerVal25 do
@@ -2860,11 +2860,11 @@ local function __FUNC_1AB33_(arg0, arg1, arg2, arg3, arg4, arg5)
 						end
 						registerVal23 = CoD.BlackMarketUtility.IsBlackMarketItem(registerVal11)
 						if not false and registerVal23 then
-							registerVal23 = CoD.getStatsMilestoneTable(3.000000, Enum.eModes.MODE_MULTIPLAYER)
+							registerVal23 = CoD.getStatsMilestoneTable(3, Enum.eModes.MODE_MULTIPLAYER)
 							registerVal24 = tonumber(Engine.TableLookup(nil, registerVal23, Enum.milestoneTableColumns_t.MILESTONE_COLUMN_UNLOCKITEM, "camo_diamond", Enum.milestoneTableColumns_t.MILESTONE_COLUMN_INCLUDE, registerVal11, Enum.milestoneTableColumns_t.MILESTONE_COLUMN_INDEX))
 							registerVal25 = Engine.GetChallengeCompleteForChallengeIndex(Enum.eModes.MODE_MULTIPLAYER, arg0, registerVal24)
 							if arg1 or not registerVal25 then
-								registerVal25 = CoD.getStatsMilestoneTable(5.000000, Enum.eModes.MODE_MULTIPLAYER)
+								registerVal25 = CoD.getStatsMilestoneTable(5, Enum.eModes.MODE_MULTIPLAYER)
 								registerVal25 = tonumber(Engine.TableLookup(nil, registerVal25, Enum.milestoneTableColumns_t.MILESTONE_COLUMN_UNLOCKITEM, "camo_diamond", Enum.milestoneTableColumns_t.MILESTONE_COLUMN_INCLUDE, registerVal11, Enum.milestoneTableColumns_t.MILESTONE_COLUMN_INDEX))
 								registerVal25 = Engine.GetChallengeCompleteForChallengeIndex(Enum.eModes.MODE_MULTIPLAYER, arg0, registerVal25)
 								if arg1 or not registerVal25 then
@@ -2890,7 +2890,7 @@ local function __FUNC_1AB33_(arg0, arg1, arg2, arg3, arg4, arg5)
 				registerVal24 = Engine.CreateModel(registerVal23, "rarity")
 				registerVal25 = Engine.CreateModel(registerVal23, "isBMClassified")
 				local registerVal26 = Engine.CreateModel(registerVal23, "duplicateCount")
-				if registerVal20 and 0.000000 <= registerVal21 and registerVal21 then
+				if registerVal20 and 0 <= registerVal21 and registerVal21 then
 					if not arg1[registerVal21] then
 						arg1[registerVal21] = {}
 					end
@@ -2899,8 +2899,8 @@ local function __FUNC_1AB33_(arg0, arg1, arg2, arg3, arg4, arg5)
 					Engine.SetModelValue(registerVal28, true)
 					registerVal28 = Engine.CreateModel(registerVal20, "isPackage")
 					Engine.SetModelValue(registerVal28, false)
-					if registerVal22 == 0.000000 and arg5 and arg5 == true then
-						for index27=Enum.WeaponOptionFilter.WEAPONOPTION_FILTER_FIRST, (Enum.WeaponOptionFilter.WEAPONOPTION_FILTER_COUNT - 1.000000), 1.000000 do
+					if registerVal22 == 0 and arg5 and arg5 == true then
+						for index27=Enum.WeaponOptionFilter.WEAPONOPTION_FILTER_FIRST, (Enum.WeaponOptionFilter.WEAPONOPTION_FILTER_COUNT - 1), 1 do
 							local registerVal33 = CoD.WeaponOptionFilterToString(index27)
 							if not arg1[(registerVal21 .. "_" .. registerVal33)] then
 								arg1[(registerVal21 .. "_" .. registerVal33)] = {}
@@ -2915,7 +2915,7 @@ local function __FUNC_1AB33_(arg0, arg1, arg2, arg3, arg4, arg5)
 							if registerVal28 == Enum.eModes.MODE_COUNT then
 							end
 							registerVal29 = Engine.GetAttachmentRefByIndex(arg4)
-							local registerVal30 = Engine.TableLookup(arg0, "gamedata/weapons/common/weaponOptions.csv", 2.000000, registerVal29, 0.000000, registerVal22, 3.000000)
+							local registerVal30 = Engine.TableLookup(arg0, "gamedata/weapons/common/weaponOptions.csv", 2, registerVal29, 0, registerVal22, 3)
 							if registerVal30 == "" then
 							end
 						end
@@ -2964,7 +2964,7 @@ local function __FUNC_1AB33_(arg0, arg1, arg2, arg3, arg4, arg5)
 								end
 								registerVal33 = Engine.CreateModel(registerVal20, "isBMClassified")
 								Engine.SetModelValue(registerVal33, registerVal32)
-								Engine.SetModelValue(registerVal26, 0.000000)
+								Engine.SetModelValue(registerVal26, 0)
 							end
 							if not arg1[(registerVal21 .. "_" .. registerVal28)] then
 								arg1[(registerVal21 .. "_" .. registerVal28)] = {}
@@ -2981,7 +2981,7 @@ local function __FUNC_1AB33_(arg0, arg1, arg2, arg3, arg4, arg5)
 											registerVal32 = Engine.IsWeaponOptionLockedEntitlement(arg0, CoD.CACUtility.ATTACHMENT_NONE, registerVal16)
 											if not registerVal32 then
 												registerVal32 = Engine.GetModelValue(Engine.GetModel(registerVal20, "itemIndex"))
-												registerVal34 = Engine.TableLookup(arg0, CoD.attachmentTable, 0.000000, registerVal32, 1.000000, registerVal21, 22.000000)
+												registerVal34 = Engine.TableLookup(arg0, CoD.attachmentTable, 0, registerVal32, 1, registerVal21, 22)
 												if registerVal21 == "camo" and registerVal34 ~= nil and registerVal34 ~= "" then
 													local registerVal35 = IsLive()
 													if not registerVal35 then
@@ -2996,22 +2996,22 @@ local function __FUNC_1AB33_(arg0, arg1, arg2, arg3, arg4, arg5)
 																registerVal39 = Engine.CreateModel(registerVal20, "unlockProgressAndTarget")
 																Engine.SetModelValue(registerVal39, (registerVal35.progress .. " " .. registerVal35.targetValue))
 															else
-																registerVal36 = Engine.TableLookup(nil, CoD.contractTable_mp, 0.000000, registerVal34, 8.000000)
+																registerVal36 = Engine.TableLookup(nil, CoD.contractTable_mp, 0, registerVal34, 8)
 																registerVal37 = Engine.GetDStatForMode(arg0, Enum.eModes.MODE_MULTIPLAYER, "playerstatslist", registerVal36, "statvalue")
-																if 0.000000 >= registerVal37 then
+																if 0 >= registerVal37 then
 																end
 																if true then
-																	local registerVal38 = Engine.TableLookup(nil, CoD.contractTable_mp, 0.000000, registerVal34, 3.000000)
+																	local registerVal38 = Engine.TableLookup(nil, CoD.contractTable_mp, 0, registerVal34, 3)
 																	if not registerVal38 then
 																	end
-																	registerVal39 = tonumber(Engine.TableLookup(nil, CoD.contractTable_mp, 0.000000, registerVal34, 2.000000))
+																	registerVal39 = tonumber(Engine.TableLookup(nil, CoD.contractTable_mp, 0, registerVal34, 2))
 																	local registerVal40 = Engine.Localize(("CONTRACT_" .. "" .. "_DESC"), registerVal39)
 																	local registerVal41 = Engine.CreateModel(registerVal20, "unlockDescription")
 																	Engine.SetModelValue(registerVal41, registerVal40)
 																	registerVal41 = Engine.CreateModel(registerVal20, "unlockProgressAndTarget")
 																	Engine.SetModelValue(registerVal41, (registerVal39 .. " " .. registerVal39))
 																else
-																	registerVal38 = Engine.TableLookup(nil, CoD.contractTable_mp, 0.000000, registerVal34, 4.000000)
+																	registerVal38 = Engine.TableLookup(nil, CoD.contractTable_mp, 0, registerVal34, 4)
 																	registerVal39 = Engine.Localize("MPUI_CONTRACT_NEED_TO_ACTIVATE", Engine.Localize(("CONTRACT_" .. registerVal38)))
 																	registerVal40 = Engine.CreateModel(registerVal20, "unlockDescription")
 																	Engine.SetModelValue(registerVal40, registerVal39)
@@ -3094,12 +3094,12 @@ local function __FUNC_1AB33_(arg0, arg1, arg2, arg3, arg4, arg5)
 
 			if registerVal22 and not registerVal22 and {}[value21] then
 				registerVal29 = Engine.GetModelForController(arg0)
-				registerVal31 = tostring({}[value21][1.000000])
+				registerVal31 = tostring({}[value21][1])
 				registerVal28 = Engine.CreateModel(registerVal29, ("WeaponOptions.camo." .. registerVal31))
 				LUI.CreateModelAndInitialize(registerVal28, "name", Engine.Localize((registerVal23 .. "_SHORT")))
 				LUI.CreateModelAndInitialize(registerVal28, "packageImage", registerVal24)
-				LUI.CreateModelAndInitialize(registerVal28, "itemIndex", {}[value21][1.000000])
-				LUI.CreateModelAndInitialize(registerVal28, "weaponOptionSubIndex", {}[value21][1.000000])
+				LUI.CreateModelAndInitialize(registerVal28, "itemIndex", {}[value21][1])
+				LUI.CreateModelAndInitialize(registerVal28, "weaponOptionSubIndex", {}[value21][1])
 				LUI.CreateModelAndInitialize(registerVal28, "packageCamoIndices", {}[value21])
 				LUI.CreateModelAndInitialize(registerVal28, "packageCamoImages", {}[value21])
 				LUI.CreateModelAndInitialize(registerVal28, "skuId", registerVal22)
@@ -3107,9 +3107,9 @@ local function __FUNC_1AB33_(arg0, arg1, arg2, arg3, arg4, arg5)
 				LUI.CreateModelAndInitialize(registerVal28, "packageLabel", Engine.Localize((registerVal25 .. "_SHORT")))
 				LUI.CreateModelsAndInitialize(registerVal28, registerVal15)
 				if arg5 and arg5 == true then
-					table.insert(registerVal14, (2.000000 + 0.000000), registerVal28)
+					table.insert(registerVal14, (2 + 0), registerVal28)
 				else
-					table.insert(registerVal14, (1.000000 + 0.000000), registerVal28)
+					table.insert(registerVal14, (1 + 0), registerVal28)
 				end
 			end
 		end
@@ -3120,7 +3120,7 @@ local function __FUNC_1DA34_(arg0, arg1, arg2)
 	local registerVal6 = Engine.GetModel(CoD.perController[arg0].classModel, (CoD.perController[arg0].weaponCategory .. ".itemIndex"))
 	if registerVal6 then
 		local registerVal8 = Engine.GetModelValue(registerVal6)
-		CoD.GetWeaponOptionsTableForCategory(arg0, {}, Enum.eWeaponOptionGroup.WEAPONOPTION_GROUP_CAMO, registerVal8, 0.000000, true)
+		CoD.GetWeaponOptionsTableForCategory(arg0, {}, Enum.eWeaponOptionGroup.WEAPONOPTION_GROUP_CAMO, registerVal8, 0, true)
 	end
 	local registerVal9 = Engine.GetModelForController(arg0)
 	registerVal8 = Engine.GetModel(registerVal9, "WeaponOptions")
@@ -3159,8 +3159,8 @@ local function __FUNC_1DA34_(arg0, arg1, arg2)
 	if registerVal6 then
 		local registerVal11 = Engine.GetModelValue(registerVal6)
 		local registerVal12 = CoD.CraftUtility.Paintjobs.GetCACPaintjobList(registerVal11)
-		__FUNC_1E2A8_(registerVal9, "menu_cac_none", 0.000000, "MPUI_NONE", "paintshop_0", "paintjob", Enum.CustomizationPaintjobInvalidID.CUSTOMIZATION_INVALID_PAINTJOB_INDEX, Enum.CustomizationPaintjobInvalidID.CUSTOMIZATION_INVALID_PAINTJOB_SLOT)
-		for index13=1.000000, #registerVal9, 1.000000 do
+		__FUNC_1E2A8_(registerVal9, "menu_cac_none", 0, "MPUI_NONE", "paintshop_0", "paintjob", Enum.CustomizationPaintjobInvalidID.CUSTOMIZATION_INVALID_PAINTJOB_INDEX, Enum.CustomizationPaintjobInvalidID.CUSTOMIZATION_INVALID_PAINTJOB_SLOT)
+		for index13=1, #registerVal9, 1 do
 			local registerVal21 = Engine.MarkAsLocalize(registerVal12[index13].paintjobName)
 			__FUNC_1E2A8_(registerVal9, "blacktransparent", index13, registerVal21, "paintshop_1", "paintjob", registerVal12[index13].paintjobIndex, registerVal12[index13].paintjobSlot)
 		end
@@ -3187,10 +3187,10 @@ local function __FUNC_1DA34_(arg0, arg1, arg2)
 				if true then
 					registerVal9 = Engine.Localize("MENU_REQUIRES_WEAPON_PRESTIGE", arg1)
 				else
-					if arg3 == CoD.CACUtility.mpPrestigeAttachments[1.000000] then
+					if arg3 == CoD.CACUtility.mpPrestigeAttachments[1] then
 						registerVal9 = Engine.Localize("MENU_WEAPON_PRESTIGE_CLAN_TAG", Engine.GetItemName(arg2))
 					else
-						if arg3 == CoD.CACUtility.mpPrestigeAttachments[2.000000] then
+						if arg3 == CoD.CACUtility.mpPrestigeAttachments[2] then
 							registerVal9 = Engine.Localize("MENU_WEAPON_PRESTIGE_KILL_COUNTER", Engine.GetItemName(arg2))
 						end
 					end
@@ -3211,7 +3211,7 @@ local function __FUNC_1DA34_(arg0, arg1, arg2)
 
 			if registerVal6 then
 				local registerVal14 = Engine.GetModelValue(registerVal6)
-				__FUNC_1E7E9_(0.000000, registerVal14, "", CoD.CACUtility.EmptyItemIndex)
+				__FUNC_1E7E9_(0, registerVal14, "", CoD.CACUtility.EmptyItemIndex)
 				local registerVal15, registerVal16, registerVal17 = ipairs(CoD.CACUtility.mpPrestigeAttachments)
 				for index18,value19 in registerVal15, registerVal16, registerVal17 do
 					local registerVal20 = Engine.GetAttachmentIndexByAttachmentTableIndex(registerVal14, Engine.GetAttachmentIndexByRef(value19))
@@ -3219,7 +3219,7 @@ local function __FUNC_1DA34_(arg0, arg1, arg2)
 						__FUNC_1E7E9_(index18, registerVal14, value19, registerVal20)
 					end
 				end
-				if #{}[CoD.CACUtility[(CoD.perController[arg0].weaponCategory .. "WeaponPrestigeSlot")]] < 2.000000 then
+				if #{}[CoD.CACUtility[(CoD.perController[arg0].weaponCategory .. "WeaponPrestigeSlot")]] < 2 then
 					{}[CoD.CACUtility[(CoD.perController[arg0].weaponCategory .. "WeaponPrestigeSlot")]] = {}
 				end
 			end
@@ -3244,7 +3244,7 @@ CoD["OpenCACMenuEditClass"] = __FUNC_1F08C_
 local function __FUNC_1F15C_(arg0, arg1, arg2, arg3)
 	local registerVal4 = CoD.PrestigeUtility.GetPermanentUnlockMode()
 	local registerVal5 = Engine.GetItemAllocationCost(arg1, registerVal4)
-	if arg1 ~= nil and 0.000000 < arg1 and 0.000000 <= registerVal5 then
+	if arg1 ~= nil and 0 < arg1 and 0 <= registerVal5 then
 		local registerVal7 = Engine.GetItemName(arg1, registerVal4)
 		{}.name = registerVal7
 		registerVal7 = Engine.GetItemDesc(arg1, registerVal4)
@@ -3265,7 +3265,7 @@ CoD["AddClassItemData"] = __FUNC_1F15C_
 local function __FUNC_1F40C_(arg0, arg1, arg2)
 	local registerVal3 = CoD.PrestigeUtility.GetPermanentUnlockMode()
 	local registerVal4 = Engine.GetAttachmentAllocationCost(arg1, arg2, registerVal3)
-	if arg1 ~= nil and 0.000000 < arg1 and arg2 ~= nil and 0.000000 < arg2 and 0.000000 <= registerVal4 then
+	if arg1 ~= nil and 0 < arg1 and arg2 ~= nil and 0 < arg2 and 0 <= registerVal4 then
 		local registerVal6 = Engine.GetAttachmentNameByIndex(arg2)
 		{}.name = registerVal6
 		registerVal6 = Engine.GetAttachmentDesc(arg1, arg2, registerVal3)
@@ -3273,7 +3273,7 @@ local function __FUNC_1F40C_(arg0, arg1, arg2)
 		{}.cost = registerVal4
 		{}.weaponIndex = arg1
 		{}.attachmentIndex = arg2
-		{}.count = 1.000000
+		{}.count = 1
 		table.insert(arg0, {})
 	end
 end
@@ -3284,7 +3284,7 @@ local function __FUNC_1F660_(arg0)
 	if registerVal1 == nil then
 		return nil
 	end
-	for index3=1.000000, (registerVal1 - 1.000000), 1.000000 do
+	for index3=1, (registerVal1 - 1), 1 do
 		{}.weaponItemIndex = arg0
 		{}.attachmentIndex = index3
 		table.insert({}, {})
@@ -3323,13 +3323,13 @@ local function __FUNC_1FA62_(arg0, arg1)
 	for index5,value6 in registerVal2, registerVal3, registerVal4 do
 		if value6.itemIndex == arg0 then
 			if value6.count == nil then
-				return 1.000000
+				return 1
 			else
 				return value6.count
 			end
 		end
 	end
-	return 0.000000
+	return 0
 end
 
 CoD["HowManyInClassSlot"] = __FUNC_1FA62_
@@ -3356,7 +3356,7 @@ CoD["IsSecondaryWeapon"] = __FUNC_1FC66_
 local function __FUNC_1FD73_(arg0)
 	local registerVal1 = Engine.GetLoadoutSlotForItem(arg0)
 	local registerVal2 = string.find(registerVal1, "specialty")
-	if registerVal1 and registerVal2 == 1.000000 then
+	if registerVal1 and registerVal2 == 1 then
 		return true
 	end
 	return false
@@ -3366,7 +3366,7 @@ CoD["IsPerk"] = __FUNC_1FD73_
 local function __FUNC_1FE55_(arg0)
 	local registerVal1 = Engine.GetLoadoutSlotForItem(arg0)
 	local registerVal2 = string.find(registerVal1, "killstreak")
-	if registerVal1 and registerVal2 == 1.000000 then
+	if registerVal1 and registerVal2 == 1 then
 		return true
 	end
 	return false
@@ -3405,7 +3405,7 @@ CoD["IsTacticalGrenade"] = __FUNC_2017E_
 local function __FUNC_2028A_(arg0)
 	local registerVal1 = Engine.GetItemGroup(arg0)
 	local registerVal2 = string.find(registerVal1, "bonuscard")
-	if registerVal1 and registerVal2 == 1.000000 then
+	if registerVal1 and registerVal2 == 1 then
 		return true
 	end
 	return false
@@ -3439,7 +3439,7 @@ local function __FUNC_20513_(arg0)
 		if value6.count ~= nil then
 		end
 	end
-	return (0.000000 + (value6.cost * value6.count))
+	return (0 + (value6.cost * value6.count))
 end
 
 CoD["SumClassItemCosts"] = __FUNC_20513_
@@ -3603,7 +3603,7 @@ local function __FUNC_2161E_(arg0)
 			end
 		end
 	end
-	return string.format("%d %d %d", (ColorSet.CodCaster.r * 255.000000), (ColorSet.CodCaster.g * 255.000000), (ColorSet.CodCaster.b * 255.000000))
+	return string.format("%d %d %d", (ColorSet.CodCaster.r * 255), (ColorSet.CodCaster.g * 255), (ColorSet.CodCaster.b * 255))
 end
 
 CoD["GetDefaultTeamFactionColor"] = __FUNC_2161E_
@@ -3774,7 +3774,7 @@ local function __FUNC_2295B_(arg0)
 					registerVal3 = CoD.GetColorBlindColorForPlayer(registerVal1, "EnemyOrange")
 				end
 			end
-			return string.format("%d %d %d", (registerVal3.r * 255.000000), (registerVal3.g * 255.000000), (registerVal3.b * 255.000000))
+			return string.format("%d %d %d", (registerVal3.r * 255), (registerVal3.g * 255), (registerVal3.b * 255))
 		end
 	end
 	return CoD.GetDefaultTeamFactionColor(arg0)
@@ -3864,20 +3864,20 @@ end
 CoD["GetTeamNameCaps"] = __FUNC_23221_
 local function __FUNC_235F4_(arg0)
 	local registerVal1 = CoD.GetNumValuesFromSpaceSeparatedString(arg0)
-	if #arg0 ~= 3.000000 then
+	if #arg0 ~= 3 then
 		return 
 	end
-	for index3=1.000000, #, 1.000000 do
-		if 1.000000 < registerVal1[index3] then
+	for index3=1, #, 1 do
+		if 1 < registerVal1[index3] then
 			registerVal1[index3] = (registerVal1[index3] * 0.003922)
 		else
-			registerVal1[index3] = (registerVal1[index3] * 1.000000)
+			registerVal1[index3] = (registerVal1[index3] * 1)
 		end
 	end
 	local registerVal3 = {}
-	registerVal3.r = registerVal1[1.000000]
-	registerVal3.g = registerVal1[2.000000]
-	registerVal3.b = registerVal1[3.000000]
+	registerVal3.r = registerVal1[1]
+	registerVal3.g = registerVal1[2]
+	registerVal3.b = registerVal1[3]
 	return registerVal3
 end
 
@@ -3891,7 +3891,7 @@ local function __FUNC_23748_(arg0)
 	end
 	if not {}.b then
 	end
-	return 0.000000, CoDLUIDecompiler.LuaRegister, CoDLUIDecompiler.LuaRegister
+	return 0, CoDLUIDecompiler.LuaRegister, CoDLUIDecompiler.LuaRegister
 end
 
 CoD["ExplodeColor"] = __FUNC_23748_
@@ -3993,7 +3993,7 @@ local function __FUNC_24387_()
 		return false
 	end
 	registerVal0 = Engine.GetGametypeSetting("allowSpectating")
-	if registerVal0 == 1.000000 then
+	if registerVal0 == 1 then
 		return true
 	end
 	return false
@@ -4006,7 +4006,7 @@ local function __FUNC_244A2_()
 		return false
 	end
 	registerVal0 = Engine.GetGametypeSetting("allowInGameTeamChange")
-	if registerVal0 == 1.000000 then
+	if registerVal0 == 1 then
 		return true
 	end
 	return false
@@ -4018,12 +4018,12 @@ local function __FUNC_245C4_(arg0)
 	local registerVal3 = {}
 	registerVal3.leftAnchor = false
 	registerVal3.rightAnchor = false
-	registerVal3.left = (-registerVal1 / 2.000000)
-	registerVal3.right = (registerVal1 / 2.000000)
+	registerVal3.left = (-registerVal1 / 2)
+	registerVal3.right = (registerVal1 / 2)
 	registerVal3.topAnchor = false
 	registerVal3.bottomAnchor = false
-	registerVal3.top = (-registerVal2 / 2.000000)
-	registerVal3.bottom = (registerVal2 / 2.000000)
+	registerVal3.top = (-registerVal2 / 2)
+	registerVal3.bottom = (registerVal2 / 2)
 	return registerVal3
 end
 
@@ -4032,12 +4032,12 @@ local function __FUNC_24700_()
 	local registerVal0 = {}
 	registerVal0.leftAnchor = true
 	registerVal0.rightAnchor = true
-	registerVal0.left = 0.000000
-	registerVal0.right = 0.000000
+	registerVal0.left = 0
+	registerVal0.right = 0
 	registerVal0.topAnchor = true
 	registerVal0.bottomAnchor = true
-	registerVal0.top = 0.000000
-	registerVal0.bottom = 0.000000
+	registerVal0.top = 0
+	registerVal0.bottom = 0
 	return registerVal0
 end
 
@@ -4063,12 +4063,12 @@ local function __FUNC_2492F_(arg0, arg1)
 	local registerVal7 = {}
 	registerVal7.leftAnchor = true
 	registerVal7.rightAnchor = true
-	registerVal7.left = 0.000000
-	registerVal7.right = 0.000000
+	registerVal7.left = 0
+	registerVal7.right = 0
 	registerVal7.topAnchor = true
 	registerVal7.bottomAnchor = true
-	registerVal7.top = 0.000000
-	registerVal7.bottom = 0.000000
+	registerVal7.top = 0
+	registerVal7.bottom = 0
 	registerVal7.red = arg1.r
 	registerVal7.green = arg1.g
 	registerVal7.blue = arg1.b
@@ -4152,7 +4152,7 @@ CoD["GetPlayerStats"] = __FUNC_25332_
 local function __FUNC_253CC_(arg0, arg1)
 	local registerVal2 = Engine.GetPlayerCommonGamerProfile(arg0)
 	local registerVal3 = registerVal2[arg1]:get()
-	if registerVal2 ~= nil and registerVal2[arg1] ~= nil and registerVal3 == 1.000000 then
+	if registerVal2 ~= nil and registerVal2[arg1] ~= nil and registerVal3 == 1 then
 		return true
 	end
 	return false
@@ -4175,7 +4175,7 @@ end
 
 CoD["GetColorBlindSafeColorForSetting"] = __FUNC_254A0_
 local function __FUNC_25663_(arg0, arg1, arg2)
-	local registerVal3 = IsLuaCodeVersionAtLeast(17.000000)
+	local registerVal3 = IsLuaCodeVersionAtLeast(17)
 	if not registerVal3 then
 		return ColorSet[arg1]
 	end
@@ -4191,7 +4191,7 @@ CoD["GetColorBlindColorForPlayer"] = __FUNC_25663_
 local function __FUNC_25863_(arg0, arg1)
 	local registerVal2 = Engine.StorageGetBuffer(arg0, Enum.StorageFileType.STORAGE_PROFILE_SHOUTCASTER)
 	local registerVal3 = registerVal2[arg1]:get()
-	if registerVal2 ~= nil and registerVal2[arg1] ~= nil and registerVal3 == 1.000000 then
+	if registerVal2 ~= nil and registerVal2[arg1] ~= nil and registerVal3 == 1 then
 		return true
 	end
 	return false
@@ -4324,10 +4324,10 @@ local function __FUNC_26668_(arg0, arg1)
 	end
 	table.sort({}, arg1)
 	local function __FUNC_26741_()
-		if {}[(0.000000 + 1.000000)] == nil then
+		if {}[(0 + 1)] == nil then
 			return nil
 		else
-			return {}[(0.000000 + 1.000000)], CoDLUIDecompiler.LuaRegister
+			return {}[(0 + 1)], CoDLUIDecompiler.LuaRegister
 		end
 	end
 
@@ -4446,8 +4446,8 @@ local function __FUNC_270DD_(arg0, arg1, arg2, arg3)
 	else
 		registerVal5 = LUI.UIImage.new()
 	end
-	registerVal5:setLeftRight(false, false, (-arg0 / 2.000000), (arg0 / 2.000000))
-	registerVal5:setTopBottom(false, false, (-arg1 / 2.000000), (arg1 / 2.000000))
+	registerVal5:setLeftRight(false, false, (-arg0 / 2), (arg0 / 2))
+	registerVal5:setTopBottom(false, false, (-arg1 / 2), (arg1 / 2))
 	if arg2 then
 		registerVal5:setImage(RegisterMaterial(arg2))
 	end
@@ -4461,8 +4461,8 @@ local function __FUNC_27261_(arg0, arg1)
 	else
 		registerVal3 = LUI.UIImage.new()
 	end
-	registerVal3:setLeftRight(true, true, 0.000000, 0.000000)
-	registerVal3:setTopBottom(true, true, 0.000000, 0.000000)
+	registerVal3:setLeftRight(true, true, 0, 0)
+	registerVal3:setTopBottom(true, true, 0, 0)
 	if arg0 then
 		registerVal3:setImage(RegisterMaterial(arg0))
 	end
@@ -4478,7 +4478,7 @@ local function __FUNC_273DD_(arg0, arg1, arg2, arg3, arg4)
 	if arg4 then
 	end
 	local registerVal10 = LUI.UIText.new()
-	registerVal10:setLeftRight(true, true, 0.000000, 0.000000)
+	registerVal10:setLeftRight(true, true, 0, 0)
 	registerVal10:setTopBottom(true, false, arg4, (arg4 + CoD.textSize[arg0]))
 	registerVal10:setFont(CoD.fonts[arg0])
 	registerVal10:setAlignment(LUI.Alignment[arg1])
@@ -4494,28 +4494,28 @@ end
 CoD["GetTextElem"] = __FUNC_273DD_
 local function __FUNC_2767A_()
 	local registerVal0 = LUI.UIElement.new()
-	registerVal0:setLeftRight(true, true, 0.000000, 0.000000)
-	registerVal0:setTopBottom(true, true, 0.000000, 0.000000)
+	registerVal0:setLeftRight(true, true, 0, 0)
+	registerVal0:setTopBottom(true, true, 0, 0)
 	local registerVal1 = LUI.UIImage.new()
-	registerVal1:setLeftRight(true, true, 1.000000, -1.000000)
-	registerVal1:setTopBottom(true, true, 1.000000, -1.000000)
-	registerVal1:setRGB(0.000000, 0.000000, 0.000000)
+	registerVal1:setLeftRight(true, true, 1, -1)
+	registerVal1:setTopBottom(true, true, 1, -1)
+	registerVal1:setRGB(0, 0, 0)
 	registerVal1:setAlpha(0.400000)
 	registerVal0:addElement(registerVal1)
 	registerVal0.infoContainerBackground = registerVal1
 	local registerVal2 = LUI.UIImage.new()
-	registerVal2:setLeftRight(true, true, 3.000000, -3.000000)
-	registerVal2:setTopBottom(true, true, 3.000000, -3.000000)
+	registerVal2:setLeftRight(true, true, 3, -3)
+	registerVal2:setTopBottom(true, true, 3, -3)
 	registerVal2:setImage(RegisterMaterial("menu_mp_cac_grad_stretch"))
 	registerVal2:setAlpha(0.100000)
 	registerVal0:addElement(registerVal2)
 	registerVal0.infoContainerBackgroundGrad = registerVal2
 	local registerVal3 = LUI.UIElement.new()
-	registerVal3:setLeftRight(true, true, 3.000000, -3.000000)
-	registerVal3:setTopBottom(true, true, 3.000000, -3.000000)
+	registerVal3:setLeftRight(true, true, 3, -3)
+	registerVal3:setTopBottom(true, true, 3, -3)
 	registerVal0:addElement(registerVal3)
 	registerVal0.imageContainer = registerVal3
-	local registerVal4 = CoD.BorderT6.new(1.000000, 1.000000, 1.000000, 1.000000, 0.100000)
+	local registerVal4 = CoD.BorderT6.new(1, 1, 1, 1, 0.100000)
 	registerVal0.border = registerVal4
 	registerVal0:addElement(registerVal0.border)
 	return registerVal0
@@ -4580,7 +4580,7 @@ local function __FUNC_280F4_(arg0)
 	local registerVal3, registerVal4, registerVal5 = string.gmatch(arg0, "[^%s]+")
 	for index6,value7 in registerVal3, registerVal4, registerVal5 do
 		local registerVal7 = tonumber(index6)
-		{}[1.000000] = (registerVal7 / CoD.emblem.MAX_COLOR_COMPONENT_VALUE)
+		{}[1] = (registerVal7 / CoD.emblem.MAX_COLOR_COMPONENT_VALUE)
 	end
 	return {}
 end
@@ -4602,24 +4602,24 @@ end
 
 CoD["ClampColor"] = __FUNC_28326_
 local function __FUNC_28370_(arg0, arg1, arg2)
-	local registerVal4 = math.max(0.000000, arg2)
-	local registerVal3 = math.min(registerVal4, 1.000000)
-	{}.r = ((arg0.r * (1.000000 - registerVal3)) + (arg1.r * registerVal3))
-	{}.g = ((arg0.g * (1.000000 - registerVal3)) + (arg1.g * registerVal3))
-	{}.b = ((arg0.b * (1.000000 - registerVal3)) + (arg1.b * registerVal3))
+	local registerVal4 = math.max(0, arg2)
+	local registerVal3 = math.min(registerVal4, 1)
+	{}.r = ((arg0.r * (1 - registerVal3)) + (arg1.r * registerVal3))
+	{}.g = ((arg0.g * (1 - registerVal3)) + (arg1.g * registerVal3))
+	{}.b = ((arg0.b * (1 - registerVal3)) + (arg1.b * registerVal3))
 	return {}
 end
 
 CoD["LerpColor"] = __FUNC_28370_
 local function __FUNC_284B3_(arg0, arg1)
 	local registerVal3 = math.floor(arg0)
-	if arg0 or arg1 == 10.000000 then
+	if arg0 or arg1 == 10 then
 		return tostring(registerVal3)
 	end
-	if registerVal3 < 0.000000 then
+	if registerVal3 < 0 then
 	end
 	local registerVal7 = math.floor((-registerVal3 / arg1))
-	table.insert({}, 1.000000, "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ":sub(((-registerVal3 % arg1) + 1.000000), ((-registerVal3 % arg1) + 1.000000)))
+	table.insert({}, 1, "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ":sub(((-registerVal3 % arg1) + 1), ((-registerVal3 % arg1) + 1)))
 	registerVal7 = table.concat({}, "")
 	return ("-" .. registerVal7)
 end
@@ -4638,15 +4638,15 @@ local function __FUNC_28758_(arg0, arg1)
 	local registerVal2 = type(arg0)
 	if registerVal2 == "string" then
 		registerVal2 = CoD.GetNumValuesFromSpaceSeparatedString(arg0)
-		if 0.000000 < arg1 and arg1 <= #arg0 then
+		if 0 < arg1 and arg1 <= #arg0 then
 			return registerVal2[arg1]
 		end
-		return 0.000000
+		return 0
 	else
-		if arg1 == 1.000000 then
+		if arg1 == 1 then
 			return arg0
 		else
-			return 0.000000
+			return 0
 		end
 	end
 end
@@ -4680,17 +4680,17 @@ end
 
 CoD["CopyModelValue"] = __FUNC_28977_
 local function __FUNC_28A50_(arg0)
-	local registerVal2 = math.floor((arg0 / 60000.000000))
-	return string.format("%d:%02d", registerVal2, ((arg0 - ((registerVal2 * 60.000000) * 1000.000000)) / 1000.000000))
+	local registerVal2 = math.floor((arg0 / 60000))
+	return string.format("%d:%02d", registerVal2, ((arg0 - ((registerVal2 * 60) * 1000)) / 1000))
 end
 
 CoD["GetTimeText"] = __FUNC_28A50_
 local function __FUNC_28B29_(arg0, arg1)
-	if arg1 <= 0.000000 then
+	if arg1 <= 0 then
 		return arg0
 	end
 	local registerVal3, registerVal4 = math.modf((arg0 / arg1))
-	local registerVal5 = math.floor((registerVal4 * 100.000000))
+	local registerVal5 = math.floor((registerVal4 * 100))
 	return (registerVal3 .. "." .. registerVal5)
 end
 
@@ -4705,32 +4705,34 @@ local function __FUNC_28BF0_(arg0)
 		CoD.RandomPlayerCardMapping = {}
 	end
 	if not CoD.RandomPlayerCardMapping[arg0] then
-		local registerVal3 = math.random(1.000000, 2.000000)
+		local registerVal3 = math.random(1, 2)
 		CoD.RandomPlayerCardMapping[arg0] = registerVal3
 	end
 	return CoD.RandomPlayerCardsImageNames[CoD.RandomPlayerCardMapping[arg0]]
 end
 
 CoD["GetRandomPlayerCardBackingForPlayer"] = __FUNC_28BF0_
-local function __FUNC_28E33_(arg0, arg1)
+local function CoD.SafeGetModelValue(arg0, arg1)
 	local registerVal2 = Engine.GetModel(arg0, arg1)
 	local registerVal3 = Engine.GetModelValue(registerVal2)
 	return registerVal3
 end
 
-CoD["SafeGetModelValue"] = __FUNC_28E33_
-local function __FUNC_28EDD_(arg0)
-	local registerVal1 = Engine.GetModel(arg0, "numArgs")
-	local registerVal2 = Engine.GetModelValue(registerVal1)
-	if registerVal2 ~= nil and 0.000000 < registerVal2 then
+local function CoD.GetScriptNotifyData(data)
+
+	local model = Engine.GetModel(data, "numArgs")
+	local value = Engine.GetModelValue(model)
+
+	if value ~= nil and 0 < value then end
+
+	for i=1, value, 1 do
+		table.insert({}, CoD.SafeGetModelValue(data, ("arg" .. i)))
 	end
-	for index4=1.000000, registerVal2, 1.000000 do
-		table.insert({}, CoD.SafeGetModelValue(arg0, ("arg" .. index4)))
-	end
+
 	return {}
+
 end
 
-CoD["GetScriptNotifyData"] = __FUNC_28EDD_
 local function __FUNC_29065_(arg0, arg1, arg2, arg3, arg4)
 	if not arg2 then
 		local registerVal5 = Engine.StorageGetBuffer(arg0, Enum.StorageFileType.STORAGE_MP_STATS_ONLINE)
@@ -4746,27 +4748,27 @@ local function __FUNC_29065_(arg0, arg1, arg2, arg3, arg4)
 	local registerVal8 = registerVal5.contractsAAR[arg1].active:get()
 	{}.isActive = registerVal8
 	registerVal8 = registerVal5.contractsAAR[arg1].award_given:get()
-	if registerVal8 ~= 1.000000 then
+	if registerVal8 ~= 1 then
 	end
 	{}.isAwardGiven = true
 	registerVal8 = registerVal5.contractsAAR[arg1].index:get()
 	{}.index = registerVal8
 	registerVal8 = registerVal5.contractsAAR[arg1].progress:get()
 	{}.progress = registerVal8
-	registerVal8 = tonumber(Engine.TableLookup(arg0, CoD.contractTable_mp, 0.000000, {}.index, 2.000000))
+	registerVal8 = tonumber(Engine.TableLookup(arg0, CoD.contractTable_mp, 0, {}.index, 2))
 	if not registerVal8 then
 	end
-	{}.targetValue = 0.000000
-	registerVal8 = tonumber(Engine.TableLookup(arg0, CoD.contractTable_mp, 0.000000, {}.index, 6.000000))
+	{}.targetValue = 0
+	registerVal8 = tonumber(Engine.TableLookup(arg0, CoD.contractTable_mp, 0, {}.index, 6))
 	if not registerVal8 then
 	end
-	{}.cost = 0.000000
-	registerVal8 = Engine.TableLookup(arg0, CoD.contractTable_mp, 0.000000, {}.index, 3.000000)
-	local registerVal9 = Engine.TableLookup(arg0, CoD.contractTable_mp, 0.000000, {}.index, 4.000000)
-	local registerVal10 = Engine.TableLookup(nil, CoD.contractTable_mp, 0.000000, {}.index, 7.000000)
-	local registerVal11 = Engine.TableLookup(nil, CoD.contractTable_mp, 0.000000, {}.index, 8.000000)
-	local registerVal12 = Engine.TableLookup(nil, CoD.contractTable_mp, 0.000000, {}.index, 14.000000)
-	local registerVal13 = Engine.TableLookup(nil, CoD.contractTable_mp, 0.000000, {}.index, 15.000000)
+	{}.cost = 0
+	registerVal8 = Engine.TableLookup(arg0, CoD.contractTable_mp, 0, {}.index, 3)
+	local registerVal9 = Engine.TableLookup(arg0, CoD.contractTable_mp, 0, {}.index, 4)
+	local registerVal10 = Engine.TableLookup(nil, CoD.contractTable_mp, 0, {}.index, 7)
+	local registerVal11 = Engine.TableLookup(nil, CoD.contractTable_mp, 0, {}.index, 8)
+	local registerVal12 = Engine.TableLookup(nil, CoD.contractTable_mp, 0, {}.index, 14)
+	local registerVal13 = Engine.TableLookup(nil, CoD.contractTable_mp, 0, {}.index, 15)
 	if registerVal8 == "" then
 	end
 	{}.descRef = ("CONTRACT_" .. "NULL" .. "_DESC")
@@ -4775,17 +4777,17 @@ local function __FUNC_29065_(arg0, arg1, arg2, arg3, arg4)
 	{}.titleRef = ("CONTRACT_" .. registerVal9)
 	{}.category = ""
 	{}.image = ""
-	{}.backgroundId = 0.000000
+	{}.backgroundId = 0
 	{}.camoName = ""
 	if registerVal10 ~= "" then
-		local registerVal16 = CoD.getStatsMilestoneTable(6.000000, Enum.eModes.MODE_MULTIPLAYER)
-		local registerVal14 = Engine.TableLookup(nil, registerVal16, 4.000000, registerVal10, 12.000000)
-		local registerVal15 = tonumber(Engine.TableLookup(nil, CoD.backgroundsTable, 4.000000, registerVal14, 1.000000))
+		local registerVal16 = CoD.getStatsMilestoneTable(6, Enum.eModes.MODE_MULTIPLAYER)
+		local registerVal14 = Engine.TableLookup(nil, registerVal16, 4, registerVal10, 12)
+		local registerVal15 = tonumber(Engine.TableLookup(nil, CoD.backgroundsTable, 4, registerVal14, 1))
 		{}.backgroundId = registerVal15
 		{}.category = "calling_card"
 	else
-		registerVal16 = CoD.getStatsMilestoneTable(6.000000, Enum.eModes.MODE_MULTIPLAYER)
-		registerVal14 = Engine.TableLookup(nil, registerVal16, 4.000000, registerVal11, 9.000000)
+		registerVal16 = CoD.getStatsMilestoneTable(6, Enum.eModes.MODE_MULTIPLAYER)
+		registerVal14 = Engine.TableLookup(nil, registerVal16, 4, registerVal11, 9)
 		registerVal15 = Engine.TableLookup(nil, CoD.attachmentTable, Enum.attachmentTableColumn_e.ATTACHMENTTABLE_COLUMN_REFERENCE, registerVal14, Enum.attachmentTableColumn_e.ATTACHMENTTABLE_COLUMN_IMAGE)
 		{}.image = registerVal15
 		registerVal15 = Engine.TableLookup(nil, CoD.attachmentTable, Enum.attachmentTableColumn_e.ATTACHMENTTABLE_COLUMN_REFERENCE, registerVal14, Enum.attachmentTableColumn_e.ATTACHMENTTABLE_COLUMN_NAME)
@@ -4833,7 +4835,7 @@ CoD["GetCombatRecordStatForPath"] = __FUNC_299BF_
 local function __FUNC_29B8E_(arg0, arg1)
 	local registerVal2 = CoD.GetCombatRecordStatForPath(arg0, arg1)
 	if registerVal2 == nil then
-		return 0.000000
+		return 0
 	end
 	return registerVal2
 end
@@ -4914,13 +4916,13 @@ end
 CoD["GetCombatRecordComparisonStats"] = __FUNC_2A23F_
 local function __FUNC_2A523_(arg0, arg1)
 	if arg0 and arg1 then
-		if arg1 == 0.000000 then
+		if arg1 == 0 then
 		end
-		if 100.000000 <= (arg0 / 1.000000) then
-			return math.floor(((arg0 / 1.000000) + 0.500000))
+		if 100 <= (arg0 / 1) then
+			return math.floor(((arg0 / 1) + 0.500000))
 		else
-			local registerVal5 = math.floor((((arg0 / 1.000000) * 100.000000) + 0.500000))
-			return string.format("%.2f", (registerVal5 / 100.000000))
+			local registerVal5 = math.floor((((arg0 / 1) * 100) + 0.500000))
+			return string.format("%.2f", (registerVal5 / 100))
 		end
 	end
 	return ""
@@ -4929,7 +4931,7 @@ end
 CoD["GetDisplayRatioFromTwoStats"] = __FUNC_2A523_
 local function __FUNC_2A645_(arg0)
 	if CoD.isFrontend then
-		return 0.000000
+		return 0
 	end
 	return Engine.GetLocalClientNum(arg0)
 end
@@ -4975,28 +4977,28 @@ local function __FUNC_2A9AC_(arg0)
 	local registerVal6, registerVal7, registerVal8 = ipairs(registerVal5)
 	if  ~= "" then
 		local registerVal11 = LUI.splitString(, ",")
-		if # == 2.000000 then
-			local registerVal12 = LUI.splitString(registerVal11[2.000000], "x")
-			if #registerVal11[2.000000] == 2.000000 and not registerVal1[registerVal11[1.000000]] then
-				registerVal1[registerVal11[1.000000]] = true
+		if # == 2 then
+			local registerVal12 = LUI.splitString(registerVal11[2], "x")
+			if #registerVal11[2] == 2 and not registerVal1[registerVal11[1]] then
+				registerVal1[registerVal11[1]] = true
 				local registerVal16 = IsMLGStream(Engine.GetPrimaryController())
 				if false and registerVal16 then
 					registerVal16 = Engine.Localize("MENU_MLG_QUALITY_BEST")
 				else
-					registerVal16 = Engine.Localize("MENU_MLG_QUALITY_NP", registerVal12[2.000000])
-					if not true and registerVal12[2.000000] == "720" then
+					registerVal16 = Engine.Localize("MENU_MLG_QUALITY_NP", registerVal12[2])
+					if not true and registerVal12[2] == "720" then
 					end
 				end
 				local registerVal18 = {}
-				registerVal18.qualityId = registerVal11[1.000000]
+				registerVal18.qualityId = registerVal11[1]
 				registerVal18.display = registerVal16
 				table.insert(CoD.LiveEventQualities, registerVal18)
 			else
-				if #registerVal12 == 1.000000 and not registerVal1[registerVal11[1.000000]] then
-					registerVal1[registerVal11[1.000000]] = true
+				if #registerVal12 == 1 and not registerVal1[registerVal11[1]] then
+					registerVal1[registerVal11[1]] = true
 					local registerVal15 = {}
-					registerVal15.qualityId = registerVal11[1.000000]
-					registerVal16 = Engine.Localize(("MENU_VOD_QUALITY_" .. registerVal11[1.000000]))
+					registerVal15.qualityId = registerVal11[1]
+					registerVal16 = Engine.Localize(("MENU_VOD_QUALITY_" .. registerVal11[1]))
 					registerVal15.display = registerVal16
 					table.insert(CoD.LiveEventQualities, registerVal15)
 				end
@@ -5016,7 +5018,7 @@ end
 CoD["LiveEventNewQualities"] = __FUNC_2A9AC_
 local function __FUNC_2AFBA_(arg0, arg1)
 	local function __FUNC_2B29E_(arg0, arg1, arg2)
-		arg0.textBox:beginAnimation("move", 0.000000)
+		arg0.textBox:beginAnimation("move", 0)
 		arg0.currentXOffset = arg1
 		arg0.updatingScroll = true
 		local registerVal3 = IsCurrentLanguageReversed()
@@ -5029,17 +5031,17 @@ local function __FUNC_2AFBA_(arg0, arg1)
 	end
 
 	local function __FUNC_2B459_(arg0)
-		__FUNC_2B29E_(arg0, 0.000000)
+		__FUNC_2B29E_(arg0, 0)
 	end
 
-	arg0.autoScrollStartDelay = 2500.000000
+	arg0.autoScrollStartDelay = 2500
 	arg0.autoScrollSpeed = 0.400000
-	arg0.autoScrollEndDelay = 2500.000000
+	arg0.autoScrollEndDelay = 2500
 	arg0.rightStickScrollSpeed = 0.700000
 	arg0.allowAutoScrolling = true
 	arg0.allowRightStickScrolling = false
-	arg0.currentXOffset = 0.000000
-	arg0.scrollDistance = 0.000000
+	arg0.currentXOffset = 0
+	arg0.scrollDistance = 0
 	local function __FUNC_2B499_()
 	end
 
@@ -5070,35 +5072,35 @@ local function __FUNC_2AFBA_(arg0, arg1)
 				if arg0.allowRightStickScrolling and registerVal2 then
 					local registerVal2 = Engine.GetModelValue(registerVal2)
 				end
-				registerVal2 = math.abs((((-registerVal2 * arg0.rightStickScrollSpeed) / arg1.timeElapsed) * 1000.000000))
+				registerVal2 = math.abs((((-registerVal2 * arg0.rightStickScrollSpeed) / arg1.timeElapsed) * 1000))
 				if 0.050000 < registerVal2 then
 				else
-					if true and arg0.autoScrollStartDelay <= (0.000000 + arg1.timeElapsed) then
+					if true and arg0.autoScrollStartDelay <= (0 + arg1.timeElapsed) then
 					end
 				end
-				if not false and 0.000000 < arg0.autoScrollSpeed and arg0.allowAutoScrolling then
+				if not false and 0 < arg0.autoScrollSpeed and arg0.allowAutoScrolling then
 				end
-				local registerVal3 = math.min((arg0.currentXOffset + ((arg0.autoScrollSpeed / arg1.timeElapsed) * 1000.000000)), arg0.scrollDistance)
-				registerVal2 = math.max(registerVal3, 0.000000)
-				if arg0.scrollDistance <= registerVal2 and not false and arg0.allowAutoScrolling and arg0.autoScrollEndDelay <= (0.000000 + arg1.timeElapsed) then
+				local registerVal3 = math.min((arg0.currentXOffset + ((arg0.autoScrollSpeed / arg1.timeElapsed) * 1000)), arg0.scrollDistance)
+				registerVal2 = math.max(registerVal3, 0)
+				if arg0.scrollDistance <= registerVal2 and not false and arg0.allowAutoScrolling and arg0.autoScrollEndDelay <= (0 + arg1.timeElapsed) then
 					__FUNC_2B499_()
 				end
-				__FUNC_2B29E_(arg0, 0.000000, 0.000000)
+				__FUNC_2B29E_(arg0, 0, 0)
 			end
 
-			local registerVal3 = LUI.UITimer.newElementTimer(100.000000, false, __FUNC_2B818_)
+			local registerVal3 = LUI.UITimer.newElementTimer(100, false, __FUNC_2B818_)
 			arg0.updateTimer = registerVal3
 			arg0:addElement(arg0.updateTimer)
 		end
 	end
 
-	arg0:addElement(LUI.UITimer.newElementTimer(0.000000, true, __FUNC_2B63E_))
+	arg0:addElement(LUI.UITimer.newElementTimer(0, true, __FUNC_2B63E_))
 end
 
 CoD["setupHorizontalScrollingWidget"] = __FUNC_2AFBA_
 CoD["incentivesTable"] = "gamedata/store/common/incentives.csv"
 local function __FUNC_2BBD8_(arg0)
-	local registerVal3 = Engine.TableLookup(nil, CoD.incentivesTable, 2.000000, arg0, 8.000000)
+	local registerVal3 = Engine.TableLookup(nil, CoD.incentivesTable, 2, arg0, 8)
 	return registerVal3
 end
 
@@ -5119,7 +5121,7 @@ local function __FUNC_2BC99_(arg0)
 			end
 		end
 	end
-	return 2.000000
+	return 2
 end
 
 CoD["GetThermometerMilestoneTier"] = __FUNC_2BC99_
@@ -5129,24 +5131,24 @@ local function __FUNC_2BE51_(arg0)
 	local registerVal7 = tonumber(CoD.GetPromoUnlockValue("bgbcc_tier2"))
 	local registerVal8 = tonumber(CoD.GetPromoUnlockValue("bgbcc_tier3"))
 	local registerVal9 = tonumber(CoD.GetPromoUnlockValue("bgbcc_tier4"))
-	if registerVal5 ~= 1.000000 or not registerVal6 then
-		if registerVal5 == 2.000000 and registerVal6 and not registerVal7 then
+	if registerVal5 ~= 1 or not registerVal6 then
+		if registerVal5 == 2 and registerVal6 and not registerVal7 then
 		end
 	else
-		if registerVal5 == 2.000000 and registerVal6 and registerVal7 then
+		if registerVal5 == 2 and registerVal6 and registerVal7 then
 		else
-			if registerVal5 == 3.000000 and registerVal7 and registerVal8 then
+			if registerVal5 == 3 and registerVal7 and registerVal8 then
 			else
-				if registerVal5 == 4.000000 or registerVal5 == 5.000000 then
+				if registerVal5 == 4 or registerVal5 == 5 then
 					if registerVal8 and registerVal9 then
 					end
 				end
 			end
 		end
 	end
-	if 0.000000 < (registerVal9 - registerVal8) then
+	if 0 < (registerVal9 - registerVal8) then
 	end
-	return math.min(((((registerVal5 - 1.000000) * 1.000000) + (((arg0 - registerVal8) / (registerVal9 - registerVal8)) * 1.000000)) / 4.000000), 1.000000)
+	return math.min(((((registerVal5 - 1) * 1) + (((arg0 - registerVal8) / (registerVal9 - registerVal8)) * 1)) / 4), 1)
 end
 
 CoD["CalculateThermometerProgress"] = __FUNC_2BE51_
@@ -5155,16 +5157,16 @@ local function __FUNC_2C102_()
 	if registerVal0 then
 		registerVal0 = Dvar.ui_promoThermometerPercent:exists()
 		registerVal0 = Dvar.ui_promoThermometerPercent:get()
-		if registerVal0 and 0.000000 < registerVal0 then
+		if registerVal0 and 0 < registerVal0 then
 			return Dvar.ui_promoThermometerPercent:get()
 		else
 			registerVal0 = tonumber(Engine.GetCounterValue("zm_bgb_consumed"))
 			local registerVal1 = CoD.CalculateThermometerProgress(registerVal0)
-			local registerVal2 = math.floor((registerVal1 * 10000.000000))
-			return (registerVal2 / 10000.000000)
+			local registerVal2 = math.floor((registerVal1 * 10000))
+			return (registerVal2 / 10000)
 		end
 	end
-	return 0.000000
+	return 0
 end
 
 CoD["GetThermometerProgress"] = __FUNC_2C102_
@@ -5173,21 +5175,21 @@ local function __FUNC_2C325_()
 	if registerVal0 then
 		registerVal0 = Dvar.ui_promoItemUnlockIndex:exists()
 		registerVal0 = Dvar.ui_promoItemUnlockIndex:get()
-		if registerVal0 and 0.000000 < registerVal0 then
+		if registerVal0 and 0 < registerVal0 then
 			return Dvar.ui_promoItemUnlockIndex:get()
 		else
 			registerVal0 = tonumber(Engine.GetCounterValue("zm_bgb_consumed"))
 			local registerVal1 = CoD.GetThermometerMilestoneTier(registerVal0)
-			return (registerVal1 - 1.000000)
+			return (registerVal1 - 1)
 		end
 	end
-	return 0.000000
+	return 0
 end
 
 CoD["GetThermometerUnlockIndex"] = __FUNC_2C325_
 local function __FUNC_2C510_(arg0, arg1)
 	local function __FUNC_2C78A_(arg0, arg1, arg2)
-		arg0.textBox:beginAnimation("move", 0.000000)
+		arg0.textBox:beginAnimation("move", 0)
 		arg0.currentYOffset = arg1
 		arg0.updatingScroll = true
 		arg0.textBox:setTopBottom(true, false, -arg0.currentYOffset, (arg0.textLineHeight - arg0.currentYOffset))
@@ -5195,17 +5197,17 @@ local function __FUNC_2C510_(arg0, arg1)
 	end
 
 	local function __FUNC_2C8CA_(arg0)
-		__FUNC_2C78A_(arg0, 0.000000)
+		__FUNC_2C78A_(arg0, 0)
 	end
 
-	arg0.autoScrollStartDelay = 5000.000000
+	arg0.autoScrollStartDelay = 5000
 	arg0.autoScrollSpeed = 0.400000
-	arg0.autoScrollEndDelay = 3000.000000
+	arg0.autoScrollEndDelay = 3000
 	arg0.rightStickScrollSpeed = 0.700000
 	arg0.allowAutoScrolling = true
 	arg0.allowRightStickScrolling = true
-	arg0.currentYOffset = 0.000000
-	arg0.scrollDistance = 0.000000
+	arg0.currentYOffset = 0
+	arg0.scrollDistance = 0
 	local function __FUNC_2C909_()
 	end
 
@@ -5235,23 +5237,23 @@ local function __FUNC_2C510_(arg0, arg1)
 				if arg0.allowRightStickScrolling and registerVal2 then
 					local registerVal2 = Engine.GetModelValue(registerVal2)
 				end
-				registerVal2 = math.abs((((-registerVal2 * arg0.rightStickScrollSpeed) / arg1.timeElapsed) * 1000.000000))
+				registerVal2 = math.abs((((-registerVal2 * arg0.rightStickScrollSpeed) / arg1.timeElapsed) * 1000))
 				if 0.050000 < registerVal2 then
 				else
-					if true and arg0.autoScrollStartDelay <= (0.000000 + arg1.timeElapsed) then
+					if true and arg0.autoScrollStartDelay <= (0 + arg1.timeElapsed) then
 					end
 				end
-				if not false and 0.000000 < arg0.autoScrollSpeed and arg0.allowAutoScrolling then
+				if not false and 0 < arg0.autoScrollSpeed and arg0.allowAutoScrolling then
 				end
-				local registerVal3 = math.min((arg0.currentYOffset + ((arg0.autoScrollSpeed / arg1.timeElapsed) * 1000.000000)), arg0.scrollDistance)
-				registerVal2 = math.max(registerVal3, 0.000000)
-				if arg0.scrollDistance <= registerVal2 and not false and arg0.allowAutoScrolling and arg0.autoScrollEndDelay <= (0.000000 + arg1.timeElapsed) then
+				local registerVal3 = math.min((arg0.currentYOffset + ((arg0.autoScrollSpeed / arg1.timeElapsed) * 1000)), arg0.scrollDistance)
+				registerVal2 = math.max(registerVal3, 0)
+				if arg0.scrollDistance <= registerVal2 and not false and arg0.allowAutoScrolling and arg0.autoScrollEndDelay <= (0 + arg1.timeElapsed) then
 					__FUNC_2C909_()
 				end
-				__FUNC_2C78A_(arg0, 0.000000, 0.000000)
+				__FUNC_2C78A_(arg0, 0, 0)
 			end
 
-			local registerVal3 = LUI.UITimer.newElementTimer(100.000000, false, __FUNC_2CC88_)
+			local registerVal3 = LUI.UITimer.newElementTimer(100, false, __FUNC_2CC88_)
 			arg0.updateTimer = registerVal3
 			arg0:addElement(arg0.updateTimer)
 		end
