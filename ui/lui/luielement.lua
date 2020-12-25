@@ -175,31 +175,31 @@ function LUI.UIElement.updateElementLinkedModels(arg0, arg1)
 	end
 end
 
-function LUI.UIElement.bindGlobalModel(arg0, arg1, arg2)
-	local registerVal4 = DataSources[arg2.dataSource].getModel(arg1)
-	if DataSources[arg2.dataSource] and DataSources[arg2.dataSource].getModel and registerVal4 then
-		if arg2.modelPath then
-			local registerVal6 = Engine.GetModel(registerVal4, arg2.modelPath)
+function LUI.UIElement.bindGlobalModel(arg0, _instance, _modeldata)
+	local sources = DataSources[_modeldata.dataSource].getModel(_instance)
+	if DataSources[_modeldata.dataSource] and DataSources[_modeldata.dataSource].getModel and sources then
+		if _modeldata.modelPath then
+			local GetDataModel = Engine.GetModel(sources, _modeldata.modelPath)
 		else
 		end
-		if registerVal4 then
-			registerVal6 = arg0:subscribeToModel(registerVal4, arg2.updateFn)
-			arg2.subscription = registerVal6
+		if sources then
+			GetDataModel = arg0:subscribeToModel(sources, _modeldata.updateFn)
+			_modeldata.subscription = GetDataModel
 		end
 	end
 end
 
-function LUI.UIElement.subscribeToGlobalModel(arg0, arg1, arg2, arg3, arg4)
-	if not arg0.globalModelBindings then
-		arg0.globalModelBindings = {}
+function LUI.UIElement.subscribeToGlobalModel(_element, _instance, _controller, _model, _function)
+	if not _element.globalModelBindings then
+		_element.globalModelBindings = {}
 	end
-	local registerVal5 = {}
-	registerVal5.dataSource = arg2
-	registerVal5.modelPath = arg3
-	registerVal5.updateFn = arg4
-	table.insert(arg0.globalModelBindings, registerVal5)
-	arg0:bindGlobalModel(arg1, registerVal5)
-	return registerVal5.subscription
+	local _modeldata = {}
+	_modeldata.dataSource = _controller
+	_modeldata.modelPath = _model
+	_modeldata.updateFn = _function
+	_modeldata.insert(_element.globalModelBindings, _modeldata)
+	_element:bindGlobalModel(_instance, _modeldata)
+	return _modeldata.subscription
 end
 
 function LUI.UIElement.unsubscribeFromGlobalModels(arg0)
