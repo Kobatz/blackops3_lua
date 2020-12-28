@@ -12,5 +12,5 @@ Please do not contact me for help or to explain the scripts to you, you can look
 
 Hope this is a useful resource, happy scripting!
 
-Uploaded by Weeaboo Jones aka. Kobatz
+Uploaded and edited by Weeaboo Jones aka. Kobatz
 got eem
