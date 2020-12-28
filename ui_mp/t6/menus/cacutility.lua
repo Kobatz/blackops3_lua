@@ -1146,7 +1146,7 @@ local function __FUNC_C565_(arg0, arg1)
 			registerVal9.itemstats[registerVal10].pLevel:set(math.min((registerVal13 + 1.000000), CoD.CACUtility.maxWeaponPrestige))
 			UploadStats(arg5, arg3)
 			SaveLoadout(arg5, arg3)
-			Engine.ForceNotifyModelSubscriptions(arg1)
+			Engine.ForceModelSubscriptions(arg1)
 			GoBack(arg5, arg3)
 		end
 
@@ -1652,7 +1652,7 @@ local function __FUNC_10A63_(arg0, arg1, arg2)
 			registerVal13 = CoD.CACUtility.GetACVariantsFromClassExcludeAttachment(arg0, CoD.perController[arg0].classModel, (CoD.perController[arg0].weaponCategory .. arg1), registerVal10)
 			registerVal15 = CoD.CACUtility.GetWeaponOptionsFromClass(arg0, CoD.perController[arg0].classModel, CoD.perController[arg0].weaponCategory)
 			registerVal19 = CoD.GetLocalClientAdjustedNum(arg0)
-			Engine.SendClientScriptNotify(arg0, ("CustomClass_focus" .. registerVal19), CoD.perController[arg0].weaponCategory, (((registerVal9 .. "_" .. registerVal11) .. "+" .. value17.ref) .. "+" .. registerVal10), registerVal10, registerVal15, (registerVal13 .. (registerVal10 .. "," .. 0.000000)), true)
+			Engine.SendClientScript(arg0, ("CustomClass_focus" .. registerVal19), CoD.perController[arg0].weaponCategory, (((registerVal9 .. "_" .. registerVal11) .. "+" .. value17.ref) .. "+" .. registerVal10), registerVal10, registerVal15, (registerVal13 .. (registerVal10 .. "," .. 0.000000)), true)
 		end
 	end
 end

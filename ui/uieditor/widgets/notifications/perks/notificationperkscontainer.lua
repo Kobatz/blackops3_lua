@@ -30,17 +30,16 @@ function CoD.NotificationPerksContainer.new(arg0, arg1)
 		end
 		return registerVal3
 	end
-
 	registerVal3:registerEventHandler("hud_boot", __FUNC_9DB_)
-	local function __FUNC_AAA_(arg0)
-		local registerVal2 = IsParamModelEqualToString(arg0, "show_perk_notification")
+
+	registerVal3:subscribeToGlobalModel(arg1, "PerController", "scriptNotify", function(ModelRef)
+		local registerVal2 = IsParamModelEqualToString(ModelRef, "show_perk_notification")
 		registerVal2 = IsInPrematchPeriod()
 		if registerVal2 and not registerVal2 then
 			PlayClip(registerVal2, "hud_start", arg1)
 		end
-	end
+	end)
 
-	registerVal3:subscribeToGlobalModel(arg1, "PerController", "scriptNotify", __FUNC_AAA_)
 	local registerVal6 = {}
 	local registerVal7 = {}
 	registerVal7.stateName = "Perk0"
